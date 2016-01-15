@@ -29,20 +29,33 @@
 <!--        /* prompt("choose from one of the following: 1 for frequency to sound wave, 2 for to enter the number of seconds light has traveled and find how far it has reached in the allotted time, 3 for power conversion using current and resistance, 4 for power conversion using voltage and resistance, 5 for current using voltsge snd resistance, 6 for resistance using voltage and current 7 for wavelength in feet from a frequency, 8 for wavelength in meters from a frequency.")*/-->
         <br>
         
+<!--
         <h2 class="table" >
       <label for="Enter Frequency">Enter the frequency to be converted to coordinated sound variable. </label>
-        <input type="text" onfocus="javascript:resetanswer();" name="Enter_Frequency"></input>
+        <input type="text" id= onfocus="javascript:resetanswer();" name="Enter_Frequency"></input>
         <a href=javascript:frenquency_conversion();></a>
     <button id="frequency_conversions" type=button onclick="frequency_conversion()"  name="Enter_Frequecy">Submit Frequency</button>
-        <script src="JS/energy_conversion.js">
+-->
+        <h2 class="table">
+        <label for="Enter Frequency">
+            Enter the frequency to be converted to coordinated sound variable. 
+        </label>
+        <input type="text" id="frequncy_conversions" name="Enter Frequency"></input>
+        <button id="frequency_conversions" onclick="frequency_conversion();">
+            Submit Frequency
+        </button>
+        <br>
+        That frequency is <span id="range">not submitted yet</span>.
+    </h2>
+        <script src="JS/energy_tables.js">
         </script>
         </h2>
             <br>
     <h3 class="table">
     <label for="Light distance conversion">Enter seconds light has traveled.</label>
-        <input type="text" onfocus="javascript:resetanswer();" name="Light_Distance"></input>
-    <a href=javascript:distance_light();></a>
-        <button id="light_conversion" type="submit" >Submit number of seconds</button>
+        <input type="text" id="light_coordinate" onfocus="javascript:resetanswer();" name="Light_Distance"></input>
+<!--    <a href=javascript:distance_light();></a>-->
+        <button id="light_conversion" type="button" onclick="distance_light();">Submit number of seconds</button>
     </h3>
 <br>
 

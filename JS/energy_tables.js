@@ -29,7 +29,7 @@ var	power = ( voltage * voltage ) / resistance;
 var	voltage = current * resistance;
 var	current = voltage / resistance;
 var	resistance = voltage / current;
-
+var range;
 
 //int main() 
 //
@@ -41,19 +41,32 @@ var	resistance = voltage / current;
 //	wavelength_ft = 1100 / frequency;
 //	wavelength_m = 335 / frequency;
  
-function frequency_conversion(frequency) { 
-	if (frequency >=20 && frequency <= 200 )
-		alert("frequency = bass");
-	if else (frequency >= 200 && frequency <= 3000)
-	alert("frequency = midrange");
-	if else (frequency >= 3000)
-	alert("frequency = treble");
-    else 
-        alert ("out of range");
-        
-        }
-function distance_light {
+//function frequency_conversion(frequency) { 
+//	if (frequency >=20 && frequency <= 200 )
+//		alert("frequency = bass");
+//	if else (frequency >= 200 && frequency <= 3000)
+//	alert("frequency = midrange");
+//	if else (frequency >= 3000)
+//	alert("frequency = treble");
+//    else 
+//        alert ("out of range");
+//        
+//        }
+function frequency_conversion() {
+    var frequency = document.getElementById("frequncy_conversions").value;
+    // note: using the same variable for input AND output is not good practice
+    if (frequency >= 20 && frequency <= 200) frequency = "bass";
+    else if (frequency >= 200 && frequency <= 3000) frequency = "midrange";
+    else if (frequency >= 3000) frequency = "treble";
+    else range = "out of range";
+    document.getElementById("range").innerHTML = frequency;
+    alert('range of frequency is:' + frequency + '');
+}
+
+    function distance_light() {
+        var seconds = document.getElementById("light_coordinate").value
  return    speed_of_light * seconds;
+        alert(distance_light)
 }
 
 
