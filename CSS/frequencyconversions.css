@@ -1,0 +1,40 @@
+<CSS>
+body {
+  color:cornflowerblue;
+    font-size:90px;
+}
+header {
+text-align:center;
+    background-color:purple;
+    font-size: 75px;
+    height:100px;
+    margin:0;
+    border:0;
+}
+
+h1{
+    background-color:purple;
+    text-align:center;
+}
+h2{
+    display:block;
+}
+h3{
+    display:block;
+}
+
+    textarea {
+        width:100px;
+        height:100px;
+    }
+ol {
+    display:list-item;
+}
+.table {
+    display: list-item;
+}
+
+footer {
+    text-align:center;
+    font-size:30px;
+}
