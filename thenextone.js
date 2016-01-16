@@ -1,6 +1,10 @@
 var html = '';
+var v = [1]
+ 
+function message_Board { 
+    while (v <= 1) {
+        html += '<div>' + var message = prompt("whatcha doing ya'll?") + '</div>'}
 
-for (var v = 1; v <= 100000000; v += 1) {
-    html += '<div>' + var message = prompt("whatcha doing ya'll?") + '</div>'
-}
-document.write('div' + html + '/div');
+v.unshift(document.write('div' + html + '/div'));
+    }
+} 

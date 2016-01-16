@@ -52,23 +52,40 @@ var range;
 //        alert ("out of range");
 //        
 //        }
+//function frequency_conversion() {
+//    var frequency = document.getElementById("frequncy_conversions").value;
+//    // note: using the same variable for input AND output is not good practice
+//    if (frequency >= 20 && frequency <= 200) frequency = "bass";
+//    else if (frequency >= 200 && frequency <= 3000) frequency = "midrange";
+//    else if (frequency >= 3000) frequency = "treble";
+//    else range = "out of range";
+//    document.getElementById("range").innerHTML = frequency;
+//    alert('range of frequency is:' + frequency + '');
+//}
+//
+//    function distance_light() {
+//        var seconds = document.getElementById("light_coordinate").value
+// return  var dist_coordinate = speed_of_light * seconds;
+//        alert(dist_coordinate);
+//}
+
+// var dist_coordinate = speed_of_light * seconds;
+
 function frequency_conversion() {
-    var frequency = document.getElementById("frequncy_conversions").value;
-    // note: using the same variable for input AND output is not good practice
-    if (frequency >= 20 && frequency <= 200) frequency = "bass";
-    else if (frequency >= 200 && frequency <= 3000) frequency = "midrange";
-    else if (frequency >= 3000) frequency = "treble";
-    else range = "out of range";
-    document.getElementById("range").innerHTML = frequency;
-    alert('range of frequency is:' + frequency + '');
+  var frequency = document.getElementById("frequncy_conversions").value;
+  // note: using the same variable for input AND output is not good practice
+  if (frequency >= 20 && frequency <= 200) frequency = "bass";
+  else if (frequency >= 200 && frequency <= 3000) frequency = "midrange";
+  else if (frequency >= 3000) frequency = "treble";
+  else range = "out of range";
+  document.getElementById("range").innerHTML = frequency;
+  alert('range of frequency is:' + frequency + '');
 }
 
-    function distance_light() {
-        var seconds = document.getElementById("light_coordinate").value
- return    speed_of_light * seconds;
-        alert(distance_light)
-}
-
+  function distance_light() {
+    var seconds = document.getElementById("light_coordinate").value
+    alert('The distance the light  has traveled is:' + speed_of_light * seconds + 'meters');
+    }
 
   var Choice = prompt("choose from one of the following: 1 for frequency to sound wave, 2 for to enter the number of seconds light has traveled and find how far it has reached in the allotted time, 3 for power conversion using current and resistance, 4 for power conversion using voltage and resistance, 5 for current using voltsge snd resistance, 6 for wavelength in feet from a frequency, 7 for wavelength in meters from a frequency.");
 
