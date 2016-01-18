@@ -1,10 +1,12 @@
 var html = '';
-var v = [1]
+var v = [1];
  
-function message_Board { 
+function message_Board(html) { 
+    var message = document.getElementById('promptOutput');
     while (v <= 1) {
-        html += '<div>' + var message = prompt("whatcha doing ya'll?") + '</div>'}
-
+        html += '<div>' +  message = prompt("whatcha doing ya'll?") + '</div>'}
+outputDiv.innerHTML = html;
 v.unshift(document.write('div' + html + '/div'));
     }
 } 
+

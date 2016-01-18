@@ -1,7 +1,3 @@
-<CSS>
-
-
-
 *{
   font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 	font-size: 19px;
@@ -13,28 +9,29 @@
 header {
 text-align:center;
     background-color:purple;
-    font-size: 75px;
+    font-size: 80px;
     height:100px;
     margin:0;
-    border:0;
-    padding:0;
+    border:0 5%;
+    padding:0 8%;
 }
 h1{
     background-color:purple;
     text-align:center;
 }
 h1 button {
-  width: 40px;
-  height: 30px;
+  background-color:limegreen;
+  width: 12%;
+  height: 80%;
   display: inline-block;
-  padding: 0 90px;
-  margin: 0 70px;
-  border: 0 10px;
+  padding: 0 5%;
+  margin: 0 3%;
+  border: 0 5%;
   border-radius: 8px;
   align-text:center;
   
 }
-}
+
 h2, h3, h4 {
   display:inline-block;
     box-sizing:content-box;
@@ -43,7 +40,7 @@ h2, h3, h4 {
    align:left;
   margin:10px;
   padding 10px;
-   border: 5px solid black; 
+   border: 10px solid black; 
   text:12px;
   
 }
@@ -51,6 +48,150 @@ body {
   background-color:cornflowerblue;
     font-size:20px;
 }
+
+body button {
+    position: right;
+    border: 3px solid black;
+    border-radius: 8px;
+      }
+input{
+  border: 3px solid black;
+  border-radius: 8px;
+  position: right;
+}
+
+
+    textarea {
+        width:100px;
+        height:100px;
+    }
+ol {
+    display:list-item;
+}
+.table {
+    display: list-item;
+}
+
+footer {
+    text-align:center;
+    font-size:30px;
+    position:bottom;
+}
+
+@media screen and (min-width: 660px){
+    header {
+text-align:center;
+    background-color:purple;
+    font-size: 80px;
+    height:100px;
+    margin:0;
+    border:0 5%;
+    padding:0 8%;
+}
+h1{
+    background-color:purple;
+    text-align:center;
+}
+h1 button {
+  background-color:limegreen;
+  width: 12%;
+  height: 80%;
+  display: inline-block;
+  padding: 0 5%;
+  margin: 0 3%;
+  border: 0 5%;
+  border-radius: 8px;
+  align-text:center;
+  
+}
+
+h2, h3, h4 {
+  display:inline-block;
+    box-sizing:content-box;
+    height: 130px;
+    width: 700px;
+   align:left;
+  margin:10px;
+  padding 10px;
+   border: 10px solid black; 
+  text:12px;
+  
+}
+body {
+  background-color:cornflowerblue;
+    font-size:20px;
+}
+
+
+
+
+
+    textarea {
+        width:100px;
+        height:100px;
+    }
+ol {
+    display:list-item;
+}
+.table {
+    display: list-item;
+}
+
+footer {
+    text-align:center;
+    font-size:30px;
+    position:bottom;
+}
+}
+     
+    @media screen and (min-width: 480px){
+   header {
+text-align:center;
+    background-color:purple;
+    font-size: 80px;
+    height:100px;
+    margin:0;
+    border:0 5%;
+    padding:0 8%;
+}
+h1{
+    background-color:purple;
+    text-align:center;
+}
+h1 button {
+  background-color:limegreen;
+  width: 12%;
+  height: 80%;
+  display: inline-block;
+  padding: 0 5%;
+  margin: 0 3%;
+  border: 0 5%;
+  border-radius: 8px;
+  align-text:center;
+  
+}
+
+h2, h3, h4 {
+  display:inline-block;
+    box-sizing:content-box;
+    height: 130px;
+    width: 700px;
+   align:left;
+  margin:10px;
+  padding 10px;
+   border: 10px solid black; 
+  text:12px;
+  
+}
+body {
+  background-color:cornflowerblue;
+    font-size:20px;
+}
+  body button {
+    position: right;
+    border: 3px solid black;
+    border-radius: 8px;
+      }
 
 
 
