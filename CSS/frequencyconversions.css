@@ -1,5 +1,7 @@
 <CSS>
 
+
+
 *{
   font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 	font-size: 19px;
@@ -22,9 +24,14 @@ h1{
     text-align:center;
 }
 h1 button {
-  width: 90px;
-  height: 40px;
-  display:inline-block;
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  padding: 0 90px;
+  margin: 0 70px;
+  border: 0 10px;
+  border-radius: 8px;
+  align-text:center;
   
 }
 }

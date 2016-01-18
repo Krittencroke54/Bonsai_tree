@@ -1,5 +1,6 @@
 <javascript>
-    var frequency = 0;
+
+var frequency = 0;
 var seconds = 0;
 var speed_of_light = 299792458;
 var wavelength_ft = 1100 / frequency;
@@ -84,7 +85,7 @@ function frequency_conversion() {
 
   function distance_light() {
     var seconds = document.getElementById("light_coordinate").value
-    alert('The distance the light  has traveled is:' + speed_of_light * seconds + 'meters');
+    alert('The distance the light  has traveled is:' + speed_of_light * seconds + ' meters');
     }
 
   var Choice = prompt("choose from one of the following: 1 for frequency to sound wave, 2 for to enter the number of seconds light has traveled and find how far it has reached in the allotted time, 3 for power conversion using current and resistance, 4 for power conversion using voltage and resistance, 5 for current using voltsge snd resistance, 6 for wavelength in feet from a frequency, 7 for wavelength in meters from a frequency.");
