@@ -35,6 +35,8 @@ text-align:center;
 h1{
     background-color:purple;
     text-align:center;
+  height: 30px;
+  margin-top:0;
 }
 h1 button {
   background-color:limegreen;
@@ -49,7 +51,7 @@ h1 button {
   
 }
 
-h2, h3, h4 {
+.table {
   display:inline-block;
     box-sizing:content-box;
     height:80%;
@@ -57,7 +59,8 @@ h2, h3, h4 {
   text-align:left;
   margin:3% 0;
   padding:2% 0%;
-   border: 10px solid black; 
+   border: 10px solid black;
+     display: list-item;
   
   
 }
@@ -87,9 +90,7 @@ input{
 ol {
     display:list-item;
 }
-.table {
-    display: list-item;
-}
+
 body div {
   float: right;
   margin-top:15%;
@@ -149,14 +150,15 @@ text-align:center;
   weight: 30%;
     margin:10%;
   border: 0 5%;
-  padding: 0% 5%
+  padding: 0% 5%;
   text-align:center;
 }
 h1{
     background-color:purple;
     text-align:center;
-  height:25%;
+  height:30px;
   padding:1% 0%;
+  margin-top: 0;
 }
 h1 button {
   background-color:limegreen;
@@ -171,9 +173,9 @@ h1 button {
   float: left;
 }
   
-}
 
-h2, h3, h4 {
+
+.table {
   display:inline-block;
     box-sizing:content-box;
     height: 130px;
@@ -183,6 +185,7 @@ h2, h3, h4 {
   padding 10px;
    border: 10px solid black; 
   font-size:12px;
+     display: list-item;
   
 }
 body {
@@ -206,9 +209,7 @@ body {
 ol {
     display:list-item;
 }
-.table {
-    display: list-item;
-}
+
 body div {
   float: right;
 }
@@ -247,10 +248,10 @@ footer {
 text-align:center bottom;
     background-color:purple;
     font-size: 70%em;
-    height:1%rem;
-    margin:0;
+    height:80px;
     border:2% 5%;
-    padding:2% 8%;
+    padding-top:8%;
+     margin-top:0;
 }
       .table label{
   height:30%;
@@ -266,39 +267,44 @@ text-align:center bottom;
   weight: 30%;
     margin:10%;
   border: 0 5%;
-  padding: 0% 5%
+  padding: 0% 5%;
   text-align:center;
 }
 h1{
     background-color:purple;
     text-align:center;
-  height:20%;
+    height: 30px;
+    margin-top: 0;
+    padding-bottom: 3%;
+  
 }
 h1 button {
   background-color:limegreen;
   width: 12%;
-  height: 80%;
+  height: 100%;
   display: inline-block;
-  padding: 0 5%;
-  margin: 0 3%;
+  padding: 0;
+  margin: 0 3% 1% 5%;
   border: 0 5%;
   border-radius: 8px;
   text-align: center;
   
-}
   
 }
+  
 
-h2, h3, h4 {
+
+.table{
   display:inline-block;
     box-sizing:content-box;
-    height: 130px;
-    width: 700px;
+    height: 50px;
+    width: 100%;
    text-align:left;
-  margin:;
+  margin:2px;
   padding 2% 5%;
-   border: 5px solid black; 
+   border: 2px solid black; 
   font-size:12px;
+  display: list-item;
   
 }
 body {
@@ -329,9 +335,7 @@ textarea {
 ol {
     display:list-item;
 }
-.table {
-    display: list-item;
-}
+
 
 footer {
     text-align:center;

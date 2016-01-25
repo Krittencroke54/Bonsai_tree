@@ -58,31 +58,40 @@
         <button>></button>
         <button>+</button>
       </h1>
-        <h2 class="table">
-        <label for="Enter Frequency">
+          <thead>
+              <tr>
+                  <td>Conversion</td>
+                  <td>Input</td>
+                  <td>Submit</td>
+              </tr>
+          </thead>
+  <table>    
+      <tr class="table">             
+          <td for="Enter Frequency">
             Enter the frequency to be converted to coordinated sound variable. 
-        </label>
-          <div>
-        <input type="text" id="frequncy_conversions" name="Enter Frequency"></input>
-        <button id="frequency_conversions" onclick="frequency_conversion();">
+    </td>
+         <td>
+        <input type="text" id="frequncy_conversions" name="Enter Frequency"></input> </td>
+       <td> <button id="frequency_conversions" onclick="frequency_conversion();">
             Submit Frequency
         </button>
-          </div>
-       <span id="range"></span>.
- 
+          </td>
+        <td> <span id="range"></span>. </td>
+        </tr>
    
           
-    <h3 class="table">
-    <label for="Light distance conversion">Enter seconds light has traveled.</label>
-      <div>
-        <input type="text" id="light_coordinate"  name="Light_Distance"> </input>
+    <tr class="table">
+    <td for="Light distance conversion">Enter seconds light has traveled.</td>
+      <td>
+        <input type="text" id="light_coordinate"  name="Light_Distance"> </input> </td>
 <!--    <a href=javascript:distance_light();></a>-->
-        <button id="light_conversion" type="button" onclick="distance_light();">Submit number of seconds</button>
-      </div>
-    </h3>
+        <td> <button id="light_conversion" type="button" onclick="distance_light();">Submit number of seconds</button>
+     </td>
+   </tr>
 <br>
 
-<h4 class="table"> This is a slight change</h4>
+          <tr class="table"> <td> This is a slight change</td></tr>
+   </table>
      <footer>
         <ul class="footer_links">
            <li> 
