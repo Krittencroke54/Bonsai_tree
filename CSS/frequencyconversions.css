@@ -7,111 +7,125 @@
 	line-height: 19px;
 }
 header {
-text-align:center;
+    text-align:center;
     background-color:purple;
     font-size: 80px;
     height:100px;
     margin:0;
-    border:0 5%;
+    border:0;
     padding:0 8%;
 }
 .table label{
   height:30%;
   weight: 30%;
-    margin:10%;
+  margin:10%;
   border: 0 5%;
   padding: 0% 5%
   text-align:left;
 }
 .table span{
     height:30%;
-  width: 30%;
-  weight: 30%;
+    width: 30%;
+/*  weight: 30%;*/
     margin:10%;
-  border: 0 5%;
-  padding: 0% 5%
-  text-align:center;
+    border: 0 5%;
+    padding: 0% 5%
+    text-align:center;
 }
 h1{
     background-color:purple;
     text-align:center;
-  height: 30px;
-  margin-top:0;
+    height: 30px;
+    margin-top:0;
 }
-h1 button {
-  background-color:limegreen;
-  width: 12%;
+/* h1 a {
+  margin-left: -30px;
+ background-color:limegreen; 
+  border-radius: 8px;
+  border:3px solid black;
+} */
+/* h1 .navi{
+  
+  width: 3%;
   height: 80%;
   display: inline-block;
   padding: 0 5%;
-  margin: 0 3%;
+  margin-left: 3%;
   border: 0 5%;
   border-radius: 8px;
+  text-align: left;
+  box-sizing:content-box;
+  float: right;
+} */
+      .navi {
+        display:inline-block;
+        width:15%;
+      }  
+  h1 a {
+  background-color:limegreen;
+  width: 90%;
+  height: 80%;
+  display: inline-block;
+  padding: 0;
+  margin: 0 3% 1% 5%;
+  border: 3px solid black;
+  border-radius: 8px;
   text-align: center;
-  
-}
+  float: center; 
+ }
 
 .table {
-  display:inline-block;
-    box-sizing:content-box;
-    height:80%;
-    width: 60%;
-  text-align:left;
-  margin:3% 0;
-  padding:2% 0%;
-   border: 10px solid black;
+     display:inline-block;
+     box-sizing:content-box;
+     height:80%;
+     width: 60%;
+     text-align:left;
+     margin:3% 0;
+     padding:2% 0%;
+     border: 10px solid black;
      display: list-item;
-  
-  
-}
+  }
+
 body {
-  background-color:cornflowerblue;
+    background-color:cornflowerblue;
     font-size:20px;
 }
 
- body button {
+ #calculator {
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
-    float: right;
-  }
-      
-input{
-  border: 3px solid black;
-  border-radius: 8px;
-  position: right;
-}
-
+    float: bottom;
+    border: 3px solid black;
+    border-radius: 8px;
+    position: bottom;
+ }
 
     textarea {
         width:100px;
         height:100px;
     }
+/*
 ol {
     display:list-item;
 }
+*/
 
-body div {
-  float: right;
-  margin-top:15%;
-}
+
  body button {
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
- 
       }
+
   body input {
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
-   
-      }
-
-
+    }
 
 footer {
-  display: inline;
+    display: inline;
     width:100%;
     font-size:30px;
     position:bottom;
@@ -128,7 +142,7 @@ footer {
 
 @media screen and (min-width: 660px){
     header {
-text-align:center;
+    text-align:center;
     background-color:purple;
     font-size: 80px;
     height:100px;
@@ -136,60 +150,78 @@ text-align:center;
     border:10% 5%;
     padding:3%;
 }
+    
   .table label{
   height:30%;
-  weight: 30%;
-    margin:10%;
+/*  weight: 30%;*/
+  margin:10%;
   border: 0 5%;
   padding: 0% 5%
   text-align:left;
 }
+    
 .table span{
     height:30%;
-  width:30%;
-  weight: 30%;
+    width:30%;
+    weight: 30%;
     margin:10%;
-  border: 0 5%;
-  padding: 0% 5%;
-  text-align:center;
+    border: 0 5%;
+    padding: 0% 5%;
+    text-align:center;
 }
 h1{
     background-color:purple;
     text-align:center;
-  height:30px;
-  padding:1% 0%;
-  margin-top: 0;
+    height:30px;
+    padding:1% 0%;
+    margin-top: 0;
+    margin-left: 0;
 }
-h1 button {
+/*  h1 a {
   background-color:limegreen;
-  width: 12%;
-  height: 70%;
+  width: 5em;
+  height: 80%;
   display: inline-block;
   padding: 0 5%;
   margin: 0 3%;
   border: 0 5%;
   border-radius: 8px;
   text-align: center;
-  float: left;
+  float: center;
 }
-  
-
+   */
+    .navi {
+        display:inline-block;
+        width:15%;
+      }  
+  h1 a {
+  background-color:limegreen;
+  width: 90%;
+  height: 80%;
+  display: inline-block;
+  padding: 0;
+  margin: 0 3% 1% 5%;
+  border: 3px solid black;
+  border-radius: 8px;
+  text-align: center;
+  float: center;  
+}
 
 .table {
-  display:inline-block;
+    display:inline-block;
     box-sizing:content-box;
     height: 130px;
     width: 700px;
-   text-align:left;
-  margin:10px;
-  padding 10px;
-   border: 10px solid black; 
-  font-size:12px;
-     display: list-item;
+    text-align:left;
+    margin:10px;
+    padding 10px;
+    border: 10px solid black; 
+    font-size:12px;
+    display: list-item;
   
 }
 body {
-  background-color:cornflowerblue;
+    background-color:cornflowerblue;
     font-size:20px;
 }
  body button {
@@ -199,34 +231,22 @@ body {
     float: right;
       }
 
-
-
-
     textarea {
         width:50%;
         height:60%;
     }
-ol {
-    display:list-item;
-}
 
-body div {
-  float: right;
-}
  body button {
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
- 
-      }
+       }
+    
   body input {
     display: inline-block;
     border: 3px solid black;
-    border-radius: 8px;
-   
+    border-radius: 8px;   
       }
-
-
 
 footer {
     text-align:left;
@@ -245,96 +265,103 @@ footer {
      
     @media screen and (min-width: 480px){
    header {
-text-align:center bottom;
+    text-align:center bottom;
     background-color:purple;
-    font-size: 70%em;
+    font-size: 60px;
     height:80px;
     border:2% 5%;
     padding-top:8%;
-     margin-top:0;
+    margin-top:0;
 }
-      .table label{
-  height:30%;
-  weight: 30%;
-    margin:10%;
-  border: 0 5%;
-  padding: 0% 5%
-  text-align:left;
+.table label{
+      height:30%;
+/*      weight: 30%;*/
+      margin:10%;
+      border: 0 5%;
+      padding: 0% 5%
+      text-align:left;
 }
 .table span{
     height:30%;
-  width:30%;
-  weight: 30%;
+    width:30%;
+/*  weight: 30%;*/
     margin:10%;
-  border: 0 5%;
-  padding: 0% 5%;
-  text-align:center;
-}
-h1{
-    background-color:purple;
+    border: 0 5%;
+    padding: 0% 5%;
     text-align:center;
-    height: 30px;
-    margin-top: 0;
-    padding-bottom: 3%;
+}
+
+      
+      h1{
+        background-color:purple;
+        text-align:center;
+        height: 30px;
+        margin-top: 0;
+        padding-bottom: 3%;
   
 }
-h1 button {
+  .navi {
+    display:inline-block;
+    width:15%;
+  }  
+        
+  h1 a {
   background-color:limegreen;
-  width: 12%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   display: inline-block;
   padding: 0;
   margin: 0 3% 1% 5%;
-  border: 0 5%;
+  border: 3px solid black;
   border-radius: 8px;
   text-align: center;
-  
+ float: center; 
   
 }
   
-
+      input nthchild(2) {
+        margin-left:10px;
+      }
 
 .table{
-  display:inline-block;
+    display:inline-block;
     box-sizing:content-box;
     height: 50px;
     width: 100%;
-   text-align:left;
-  margin:2px;
-  padding 2% 5%;
-   border: 2px solid black; 
-  font-size:12px;
-  display: list-item;
-  
-}
+    text-align:left;
+    margin:2px;
+    padding 2% 5%;
+    border: 2px solid black; 
+    font-size:12px;
+    display: list-item;
+  }
+        
 body {
-  background-color:cornflowerblue;
+    background-color:cornflowerblue;
     font-size:20px;
   }
-body div {
-  float: right;
-}
- body button {
+        
+ #calculater {
+    float: bottom-right;
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
- 
-      }
-  body input {
-    display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
-   
-      }
-
-
+    margin: 0;
+    padding: 3px 4px;
+    position: right   
+        }
+        
 textarea {
         width:100px;
         height:100px;
     }
+/*
 ol {
     display:list-item;
 }
+*/
 
 
 footer {
@@ -351,3 +378,8 @@ footer {
   margin: 0;
   padding:2%;
 }
+        @media (min-width 680px) {
+            .foot_wrap {
+                min-height: calc(100vh - 89px);
+            }
+        }

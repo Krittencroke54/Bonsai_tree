@@ -38,11 +38,12 @@
         <a href=javascript:frenquency_conversion();></a>
     <button id="frequency_conversions" type=button onclick="frequency_conversion()"  name="Enter_Frequecy">Submit Frequency</button>
 --> 
- <html>
+ -  <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Conversion Tables </title>
+        <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/energy_conversion.css">
         <link rel="stylesheet" href="CSS/frequencyconversions.css">
         <script src="JS/energy_tables.js"></script>
@@ -51,65 +52,56 @@
     <body>
         
     <header> Energy Conversion Tables </header>
-      <h1>
-        <button>-</button>
-        <button><</button>
-        <button href="zero.html">ZERO</button>
-        <button>></button>
-        <button>+</button>
-      </h1>
-          <thead>
-              <tr>
-                  <td>Conversion</td>
-                  <td>Input</td>
-                  <td>Submit</td>
-              </tr>
-          </thead>
-  <table>    
-      <tr class="table">             
-          <td for="Enter Frequency">
+ <h1>  
+        <div class="navi"><a data-ga-click="Navigation, go to portal negative_portal aligned stargate, text:negative" href="pages/negative_portal.html">NEGATIVE</a></div>
+        <div class="navi"><a data-ga-click="Navigation, go to portal align_left stargate, text:LEFT" href="pages/align_left.html">LEFT</a></div>
+            <div class="navi"><a data-ga-click="Navigation, go to Ground Zero Star Gate, text:ZERO" href="pages/zero.html">ZERO</a></div>
+          <div class="navi"><a data-ga-click="Navigation, go to portal align_right stargate, text:RIGHT" href="pages/align_right.html">RIGHT</a></div>
+        <div class="navi"><a data-ga-click="Navigation, go to portal positive_portal aligned stargate, text:positive" href="pages/positive_portal.html">POSITIVE</a></div>
+   </h1>
+      
+  <table>    <tr class="table">             <td for="Enter Frequency">
             Enter the frequency to be converted to coordinated sound variable. 
     </td>
          <td>
-        <input type="text" id="frequncy_conversions" name="Enter Frequency"></input> </td>
-       <td> <button id="frequency_conversions" onclick="frequency_conversion();">
+        <input type="text" id="calculator" name="Enter Frequency"> </td>
+       <td> <button id="calculater" onclick="frequency_conversion();">
             Submit Frequency
         </button>
           </td>
-        <td> <span id="range"></span>. </td>
+        <tr> <td> <span id="range"></span> </td>
         </tr>
-   
-          
     <tr class="table">
     <td for="Light distance conversion">Enter seconds light has traveled.</td>
       <td>
-        <input type="text" id="light_coordinate"  name="Light_Distance"> </input> </td>
+        <input type="text" id="calculater"  name="Light_Distance">  </td>
 <!--    <a href=javascript:distance_light();></a>-->
-        <td> <button id="light_conversion" type="button" onclick="distance_light();">Submit number of seconds</button>
-     </td>
+        <td> <button id="calculater" type="button" onclick="distance_light();">Submit number of seconds</button>
+        </td>
    </tr>
-<br>
-
           <tr class="table"> <td> This is a slight change</td></tr>
    </table>
+        <div class="foot_wrap">
      <footer>
         <ul class="footer_links">
            <li> 
-               <a data-ga-click="Footer, go to about, text:about" href="about.html">about</a>
+               <a data-ga-click="Footer, go to about, text:about" href="pages/about.html">about</a>
             </li>
-            <li> <a data-ga-click="Fotter, go to site, text:site" href="site.html">site</a>
+            <li> <a data-ga-click="Fotter, go to site, text:site" href="pages/site.html">site</a>
             </li>
            
           Math made easy 
             
           
-          <li> <a data-ga-click="Footer, go to contact, text:contact" href="contact.html">contact</a>
+          <li> <a data-ga-click="Footer, go to contact, text:contact" href="pages/contact.html">contact</a>
             </li>
-            <li> <a data-ga-click="Footer, got to help, text:help" href="help.html">help</a>
-            </li>
+            <li> <a data-ga-click="Footer, got to help, text:help" href="pages/help.html">help</a>
+            </li> 
            </ul>
-        </footer>                   
+        </footer>  
+</div>
     </body>
 </html>
+
 
 

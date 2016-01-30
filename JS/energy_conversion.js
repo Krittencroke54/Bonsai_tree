@@ -71,18 +71,18 @@ var range;
 // var dist_coordinate = speed_of_light * seconds;
 
 function frequency_conversion() {
-  var frequency = document.getElementById("frequncy_conversions").value;
+  var frequency = document.getElementById("calculator").value;
   // note: using the same variable for input AND output is not good practice
   if (frequency >= 20 && frequency <= 200) frequency = "bass";
   else if (frequency >= 200 && frequency <= 3000) frequency = "midrange";
   else if (frequency >= 3000) frequency = "treble";
   else range = "out of range";
-  document.getElementById("range").innerHTML = frequency;
+//  document.getElementById("range").innerHTML = frequency;
   alert('range of frequency is:' + frequency + '');
 }
 
   function distance_light() {
-    var seconds = document.getElementById("light_coordinate").value
+    var seconds = document.getElementById("calculator").value
     alert('The distance the light  has traveled is:' + speed_of_light * seconds + ' meters');
     }
 
