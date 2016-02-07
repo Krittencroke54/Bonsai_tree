@@ -343,16 +343,23 @@ body {
         
  #calculater {
     float: bottom-right;
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 8px;
+    display:block;
     border: 3px solid black;
     border-radius: 8px;
     margin: 0;
     padding: 3px 4px;
-    position: right   
+    position: relative;
         }
-        
+        #calculater1 {
+    float:bottom-right;
+    display:block;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 0;
+    padding: 3px 4px;
+    position:relative;
+          left:11em;
+        }
 textarea {
         width:100px;
         height:100px;
@@ -382,4 +389,4 @@ footer {
             .foot_wrap {
                 min-height: calc(100vh - 89px);
             }
-        }
+        
