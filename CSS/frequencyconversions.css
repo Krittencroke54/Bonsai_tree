@@ -15,22 +15,22 @@ header {
     border:0;
     padding:0 8%;
 }
-.table label{
+/* .table label{
   height:30%;
   weight: 30%;
   margin:10%;
   border: 0 5%;
   padding: 0% 5%
   text-align:left;
-}
-.table span{
+} */
+/* .table span{
     height:30%;
     width: 30%;
-/*  weight: 30%;*/
+  weight: 30%;
     margin:10%;
     border: 0 5%;
     padding: 0% 5%
-    text-align:center;
+    text-align:center; */
 }
 h1{
     background-color:purple;
@@ -72,18 +72,18 @@ h1{
   border-radius: 8px;
   text-align: center;
   float: center;
-  font-size:10px;
+  font-size:20px;
  }
 
 .table {
      display:inline-block;
      box-sizing:content-box;
      height:80%;
-     width: 60%;
-     text-align:left;
+     width: 80%;
+     text-align:center;
      margin:3% 0;
      padding:2% 0%;
-     border: 10px solid black;
+     border: 3px solid black;
      display: list-item;
   }
 
@@ -92,17 +92,25 @@ body {
     font-size:20px;
 }
 
- #calculator {
-   width:90%;
+ #calculator, .calculater {
+   width:80%;
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
     float: bottom;
-    border: 3px solid black;
-    border-radius: 8px;
-    position: bottom;
+    position: relative;
+   left:18px;
    box-sizing: border-box;
- }
+   margin: 20% 0;
+   
+   }
+#submitCnR {
+  position:relative;
+  left:-10px;
+}
+  {
+  right:70px;
+}
 
     textarea {
         width:30%;
@@ -115,7 +123,7 @@ ol {
 */
 
 
- body button {
+/*  body button {
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
@@ -125,7 +133,7 @@ ol {
     display: inline-block;
     border: 3px solid black;
     border-radius: 8px;
-    }
+    } */
 
 footer {
     display: inline;
@@ -154,16 +162,16 @@ footer {
     padding:3%;
 }
     
-  .table label{
+/*   .table label{
   height:30%;
-/*  weight: 30%;*/
+ weight: 30%;
   margin:10%;
   border: 0 5%;
   padding: 0% 5%
   text-align:left;
 }
-    
-.table span{
+     */
+/* .table span{
     height:30%;
     width:30%;
     weight: 30%;
@@ -171,7 +179,7 @@ footer {
     border: 0 5%;
     padding: 0% 5%;
     text-align:center;
-}
+} */
 h1{
     background-color:purple;
     text-align:center;
