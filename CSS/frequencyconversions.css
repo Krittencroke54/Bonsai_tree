@@ -9,11 +9,11 @@
 header {
     text-align:center;
     background-color:purple;
-    font-size: 30px;
-    height:100px;
+    font-size: 80px;
+    height:160px;
     margin:0;
-    border:0;
-    padding:0 8%;
+    margin-top:35px;
+    padding:15%;
 }
 /* .table label{
   height:30%;
@@ -35,28 +35,10 @@ header {
 h1{
     background-color:purple;
     text-align:center;
-    height: 30px;
+    height: 200px;
     margin-top:0;
 }
-/* h1 a {
-  margin-left: -30px;
- background-color:limegreen; 
-  border-radius: 8px;
-  border:3px solid black;
-} */
-/* h1 .navi{
-  
-  width: 3%;
-  height: 80%;
-  display: inline-block;
-  padding: 0 5%;
-  margin-left: 3%;
-  border: 0 5%;
-  border-radius: 8px;
-  text-align: left;
-  box-sizing:content-box;
-  float: right;
-} */
+
       .navi {
         display:inline-block;
         width:15%;
@@ -67,31 +49,36 @@ h1{
   height: 80%;
   display: inline-block;
   padding: 0;
-  margin: 0 3% 1% 5%;
+  margin: 0 -60% 1% 5%;
   border: 3px solid black;
   border-radius: 8px;
   text-align: center;
-  float: center;
+  float: right;
   font-size:20px;
  }
 
 .table {
-     display:inline-block;
+/*      display:inline-block; */
      box-sizing:content-box;
      height:80%;
      width: 80%;
      text-align:center;
-     margin:3% 0;
-     padding:3% 13%;
+     margin:5px 5px;
+     padding: 120px;
      border: 3px solid black;
-     display: list-item;
-  }
+     display: flex;
+     flex-direction: column;
+     background-color:cornflowerblue
+}
 .container{
   display: flex;
+  flex-direction:column; 
+  background-color:magenta;
+  justify-content: space-around;
 }
 
 body {
-    background-color:cornflowerblue;
+    background-color:magenta;
     font-size:20px;
 }
 
@@ -104,7 +91,7 @@ body {
     position: relative;
    left:18px;
    box-sizing: border-box;
-   margin: 20% 0;
+   margin: 5% 2;
    
    }
 #submitCnR {
@@ -119,114 +106,82 @@ body {
         width:30%;
         height:25%;
     }
-/*
-ol {
-    display:list-item;
-}
-*/
 
-
-/*  body button {
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 8px;
-      }
-
-  body input {
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 8px;
-    } */
 
 footer {
-    display: inline;
-    width:100%;
-    font-size:30px;
-    position:bottom;
+    display:flex
+    text-align:center;
+    font-size:8px;
+    justify-content: space-around;
 }
 .footer_links li {
+  
   box-sizing:content-box;
-  text-align: left;
-  display: inline-block;
-  width: 15%;
+  text-align: center;
+  display: flex;
+  width: 8%;
   height:3px;
   margin: 0;
   padding:2%;
+  justify-content: space-around;
 }
+ @media (max-width 1280px) {
+            .foot_wrap {
+                min-height: calc(100vh - 89px);
+            }
+        }
 
-@media screen and (min-width: 660px){
+@media screen and (max-width: 660px){
     header {
     text-align:center;
     background-color:purple;
-    font-size: 80px;
+    font-size: 45px;
     height:100px;
     margin:0;
     border:10% 5%;
     padding:3%;
 }
     
-/*   .table label{
-  height:30%;
- weight: 30%;
-  margin:10%;
-  border: 0 5%;
-  padding: 0% 5%
-  text-align:left;
-}
-     */
-/* .table span{
-    height:30%;
-    width:30%;
-    weight: 30%;
-    margin:10%;
-    border: 0 5%;
-    padding: 0% 5%;
-    text-align:center;
-} */
+
 h1{
     background-color:purple;
     text-align:center;
     height:30px;
     padding:1% 0%;
     margin-top: 0;
-    margin-left: 0;
+  
 }
-/*  h1 a {
-  background-color:limegreen;
-  width: 5em;
-  height: 80%;
-  display: inline-block;
-  padding: 0 5%;
-  margin: 0 3%;
-  border: 0 5%;
-  border-radius: 8px;
-  text-align: center;
-  float: center;
-}
-   */
+
     .navi {
         display:inline-block;
         width:15%;
       }  
   h1 a {
   background-color:limegreen;
-  width: 90%;
+  width: 80%;
   height: 80%;
   display: inline-block;
   padding: 0;
   margin: 0 3% 1% 5%;
   border: 3px solid black;
   border-radius: 8px;
-  text-align: center;
-  float: center;  
+  text-align: center;  
+font-size: 16px;
 }
 
+    .container{
+  display: flex;
+  flex-direction:column; 
+  background-color:magenta;
+  justify-content: space-around;
+}
+    
 .table {
     display:inline-block;
     box-sizing:border-box;
     height: 130px;
     width: 700px;
-    text-align:left;
+/*     text-align:left; */
     margin:10px;
     padding 10px;
     border: 10px solid black; 
@@ -236,55 +191,47 @@ h1{
 }
 body {
     background-color:cornflowerblue;
-    font-size:20px;
-}
- body button {
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 8px;
-    float: right;
-   font-size:12px;
-      }
-
-    textarea {
-        width:15%;
-        height:60%;
-    }
-
- body button {
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 8px;
-       }
+    font-size:2px;
     
-  body input {
-    display: block;
+}
+     #calculator, .calculater {
+   width:80%;
+    display: flex;
+    justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
-    box-sizing:border-box;
-      }
+    float: bottom;
+    position: relative;
+   left:18px;
+   box-sizing: border-box;
+   margin: 5% 2;
+   
+   }
+
 
 footer {
-    text-align:left;
-    font-size:30px;
-    position:bottom;
+    display:flex
+    text-align:center;
+    font-size:8px;
+    justify-content: space-around;
 }
 .footer_links li {
+  
   box-sizing:content-box;
-  text-align: left;
-  display: inline-block;
-  width: 15%;
+  text-align: center;
+  display: flex;
+  width: 8%;
   height:3px;
   margin: 0;
   padding:2%;
+  justify-content: space-around;
 }
-     
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 480px){
    header {
     text-align:center bottom;
     background-color:purple;
-    font-size: 60px;
-    height:80px;
+    font-size: 12px;
+    height:50px;
     border:2% 5%;
     padding-top:8%;
     margin-top:0;
@@ -295,17 +242,9 @@ footer {
       margin:10%;
       border: 0 5%;
       padding: 0% 5%
-      text-align:left;
+      text-align:center;
 }
-.table span{
-    height:30%;
-    width:30%;
-/*  weight: 30%;*/
-    margin:10%;
-    border: 0 5%;
-    padding: 0% 5%;
-    text-align:center;
-}
+
 
       
       h1{
@@ -318,7 +257,9 @@ footer {
 }
   .navi {
     display:inline-block;
-    width:15%;
+    width:12%;
+    text-align:center;
+    font-size:8px;
   }  
         
   h1 a {
@@ -331,79 +272,71 @@ footer {
   border: 3px solid black;
   border-radius: 8px;
   text-align: center;
- float: center; 
+ font-size:8px;
   
 }
   
-/*       input nthchild(2) {
-        margin-left:10px;
-      } */
+  .container {
+  display: flex;
+  flex-direction:column; 
+  background-color:magenta;
+  justify-content: space-around;
+}
+
 
 .table{
     display:inline-block;
     box-sizing:border-box;
     height: 80%;
-    width: 100%;
-    text-align:left;
+    width: 80%;
+    text-align:center;
     margin:2px;
     padding 2% 5%;
     border: 2px solid black; 
-    font-size:12px;
+    font-size:8px;
     display: list-item;
   }
         
 body {
     background-color:cornflowerblue;
-    font-size:20px;
+    font-size:8px;
   }
         
- #calculater {
-    float: bottom-right;
-    display:block;
+ #calculator, .calculater {
+   width:80%;
+    display: flex;
+    justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
-    margin: 0;
-    padding: 3px 4px;
+    float: bottom;
     position: relative;
-    font-size: 10px;
-      }
-        #calculater1 {
-    float:bottom-right;
-    display:block;
-    border: 3px solid black;
-    border-radius: 8px;
-    margin: 0;
-    padding: 3px 4px;
-    position:relative;
-          left:11em;
-        }
+   left:18px;
+   box-sizing: border-box;
+   margin: 5% 2;
+   
+   }
+
 textarea {
         width:20%;
         height:30%;
     }
-/*
-ol {
-    display:list-item;
-}
-*/
 
 
 footer {
+    display:flex
     text-align:center;
-    font-size:30px;
-    
+    font-size:8px;
+    justify-content: space-around;
 }
 .footer_links li {
+  
   box-sizing:content-box;
   text-align: center;
-  display: inline-block;
-  width: 15%;
+  display: flex;
+  width: 8%;
   height:3px;
   margin: 0;
   padding:2%;
+  justify-content: space-around;
 }
-        @media (min-width 680px) {
-            .foot_wrap {
-                min-height: calc(100vh - 89px);
-            }
-        }
+       
