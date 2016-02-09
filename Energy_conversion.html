@@ -60,7 +60,7 @@
         <div class="navi"><a data-ga-click="Navigation, go to portal positive_portal aligned stargate, text:positive" href="pages/positive_portal.html">POSITIVE</a></div>
    </h1>
       
-  <table>    <tr class="table">             <td for="Enter Frequency">
+  <table class="container">    <tr class="table">             <td for="Enter Frequency">
             Enter the frequency to be converted to coordinated sound variable. 
     </td>
          <td>
@@ -97,14 +97,28 @@
         <td> <button id="submit_wavlngth" class ="calculater" type="button" onclick="wavelength_to_frequency();">Submit Wavelength</button>
         </td>
    </tr>
+    
+    <tr class="table">
+            <td>Enter the frequency and wavelength to get the speed of light.</td>
+     <td>
+       <label>frequency</label>
+        <input type="text" id="frequet" class="calculater"  name="light_speed">  </td>
+         <td>
+           <label>wavelength</label>     
+        <input type="text" id="wvlnth" class="calculater" name="light_speed">  </td>
+<!--    <a href=javascript:distance_light();></a>-->
+        <td> <button id="submitlightspd" class="calculater" type="button" onclick="spdlight();">Submit frequency and wavelength.</button>
+            </td> </tr>
+    
+    
           <tr class="table">
             <td>Convert Current and Resistance to get Power</td>
      <td>
        <label>current</label>
-        <input type="text" id="current" class="calculater"  name="Light_Distance">  </td>
+        <input type="text" id="current" class="calculater"  name="power_equation">  </td>
          <td>
            <label>resistance</label>     
-        <input type="text" id="resistance" class="calculater" name="Light_Distance">  </td>
+        <input type="text" id="resistance" class="calculater" name="power_conversion">  </td>
 <!--    <a href=javascript:distance_light();></a>-->
         <td> <button id="submitCnR" class="calculater" type="button" onclick="powerCnR();">Submit current and resistance</button>
             </td> </tr>
@@ -142,6 +156,9 @@
 </div>
     </body>
 </html>
+
+
+
 
 
 

@@ -82,10 +82,13 @@ h1{
      width: 80%;
      text-align:center;
      margin:3% 0;
-     padding:2% 0%;
+     padding:3% 13%;
      border: 3px solid black;
      display: list-item;
   }
+.container{
+  display: flex;
+}
 
 body {
     background-color:cornflowerblue;
