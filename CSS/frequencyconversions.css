@@ -6,10 +6,10 @@
 	line-height: 16px;
 }
 header {
-  display:block;
+  display:inline-block;
     text-align:center;
     background-color:purple;
-    font-size: 50px;
+    font-size: 40px;
     height:160px;
   width:90%;
     
@@ -45,20 +45,19 @@ h1{
 
       .navi {
         display:inline-block;
-        width:13%;
+        width:19%;
       }  
   h1 a {
   background-color:limegreen;
   width: 90%;
   height: 80%;
   display: inline-block;
-  padding: 0;
-  margin: 0 -60% 1% 5%;
+  padding-right:-15px;
+  margin-left:56px;
   border: 3px solid black;
   border-radius: 8px;
   text-align: center;
-  float: right;
-  font-size:20px;
+  font-size:16px;
  }
 
 .table {
@@ -185,7 +184,7 @@ h1{
   border: 3px solid black;
   border-radius: 8px;
   text-align: center;  
-font-size: 16px;
+font-size: 10px;
 }
   #submitCnR{
     margin-left:25px;
@@ -235,10 +234,10 @@ footer {
     font-size:18px;
     position:bottom;
 }
-.footer_links li {
+.footer_links li  {
  font-size: 18px; box-sizing:content-box;
   text-align: left;
-  display: inline-block;
+  flex-direction:column;
   width: 15%;
   height:3px;
   margin: 0;
@@ -249,11 +248,12 @@ footer {
    header {
     text-align:center bottom;
     background-color:purple;
-    font-size: 12px;
-    height:50px;
+    font-size: 16px;
+    height:120px;
     border:2% 5%;
-    padding-top:8%;
+
     margin-top:0;
+    padding-right:40px; 
 }
 .table label{
       height:30%;
@@ -266,42 +266,48 @@ footer {
 
 
       
-      h1{
+      h1 {
          display:flex;
 justify-content:center;
 align-items:center;        flex-direction:column;
        /* z-margin:1;*/
         background-color:purple;
-        text-align:center;
-        height: 250px;
-        width:100vh;
-        margin-top: 0;
-        padding-bottom: 3%;
+        
+        height: 280px;
+        width:100%;
+       
+        
   
 }
-/*  .navi {
+      
+  .navi {
     display:inline-block;
-    width:12%;
+    width:25%;
     text-align:center;
     font-size:8px;
-  }*/  
-        
+    margin-bottom:10px;
+  }
+     
+           
   h1 a {
   background-color:limegreen;
-  width: 300%;
-justify-content:space-between;    
+ /* width: 300%;*/
+justify-content:center;    
   height: 80%;
   display: flex;
-  margin:10px;
+  margin-left:20px;
   
   border: 3px solid black;
   border-radius: 8px;
-  text-align: center;
  font-size:9px;
-  align-self:center;
- margin:
-}
   
+    
+
+}
+      .calculater{
+       
+        left:-30px;
+      }
   .container td{
   display: flex;
  font-size:12px; flex-direction:row; 
@@ -309,7 +315,7 @@ justify-content:space-between;
   justify-content: space-around;
   
       width:80vh;
-    margin-right:60px;
+
 }
 
 /* 
