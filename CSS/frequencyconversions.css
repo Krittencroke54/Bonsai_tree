@@ -45,12 +45,12 @@ h1{
 
       .navi {
         display:inline-block;
-        width:19%;
+        width:16%;
       }  
   h1 a {
   background-color:limegreen;
-  width: 90%;
-  height: 80%;
+  width: 70%;
+/*  height: 80%;*/
   display: inline-block;
   padding-right:-15px;
   margin-left:56px;
@@ -126,8 +126,12 @@ body {
     flex-direction:column;
   justify-content:space-between;
   margin:auto;
+
 } */
-.footer_links li {
+ul.footer_links{
+  font-size:16px
+}
+ .footer_links li  {
   box-sizing:content-box;
   text-align: center;
   display: inline-block;
@@ -235,7 +239,8 @@ footer {
     position:bottom;
 }
 .footer_links li  {
- font-size: 18px; box-sizing:content-box;
+ font-size: 18px;
+  box-sizing:content-box;
   text-align: left;
   flex-direction:column;
   width: 15%;
@@ -306,7 +311,7 @@ justify-content:center;
 }
       .calculater{
        
-        left:-30px;
+        left:-20px;
       }
   .container td{
   display: flex;
