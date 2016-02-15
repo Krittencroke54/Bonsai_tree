@@ -57,7 +57,7 @@ h1{
   border: 3px solid black;
   border-radius: 8px;
   text-align: center;
-  font-size:16px;
+  font-size:12px;
  }
 
 .table {
@@ -229,6 +229,7 @@ body {
    left:18px;
    box-sizing: border-box;
    margin: 5% 2%;
+         font-size:12px;
    
    }
  
@@ -258,15 +259,15 @@ footer {
     border:2% 5%;
 
     margin-top:0;
-    padding-right:40px; 
+    padding-right:100%; 
 }
 .table label{
       height:30%;
 /*      weight: 30%;*/
       margin:10%;
       border: 0 5%;
-      padding: 0% 5%
-      text-align:center;
+      padding: 0% 5%;
+    text-align:center;
 }
 
 
@@ -274,20 +275,24 @@ footer {
       h1 {
          display:flex;
 justify-content:center;
-align-items:center;        flex-direction:column;
+align-items:stretch;        
+flex-direction:column;
        /* z-margin:1;*/
         background-color:purple;
         
         height: 280px;
         width:100%;
-       
+       padding-right: 100%;
         
   
 }
+        h1 a{
+        justify-content: center;
+        }
       
   .navi {
     display:inline-block;
-    width:25%;
+    width:100%;
     text-align:center;
     font-size:8px;
     margin-bottom:10px;
