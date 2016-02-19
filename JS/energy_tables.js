@@ -1,4 +1,4 @@
-<javascript>
+
 
 var frequency = 0;
 var seconds = 0;
