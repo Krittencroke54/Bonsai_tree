@@ -52,7 +52,7 @@ h1{
   width: 70%;
 /*  height: 80%;*/
   display: inline-block;
-  padding-right:-15px;
+  padding-right:10px;
   margin-left:56px;
   border: 3px solid black;
   border-radius: 8px;
@@ -268,7 +268,8 @@ footer li {
        
     @media screen and (max-width: 480px){
    header {
-    text-align:center bottom;
+    padding-left:60%;
+    text-align:center;
     background-color:purple;
     font-size: 16px;
     height:120px;
@@ -277,6 +278,10 @@ footer li {
     margin-top:0;
     padding-right:100%; 
 }
+        h1
+        {
+            padding-left:60%;
+        }
 .table label{
       height:30%;
 /*      weight: 30%;*/
