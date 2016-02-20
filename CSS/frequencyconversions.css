@@ -62,20 +62,20 @@ h1{
 
 .table {
 /*      display:inline-block; */
-     box-sizing:content-box;
-     height:80%;
-     width: 80%;
-     text-align:center;
-     margin:auto;
-     padding: 120px;
-     border: 3px solid black;
-     display: flex;
-     flex-direction: column;
-     background-color:cornflowerblue
+ box-sizing: content-box;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 120px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: cornflowerblue;
 }
 .container{
   display: flex;
-  flex-direction:row; 
+  flex-direction:ro; 
   background-color:magenta;
   justify-content: center;
   margin:auto;
@@ -103,13 +103,17 @@ body {
 .container td{
   font-size:16px;
 }
+/*
 #submitCnR {
   position:relative;
   left:10px;
 }
+*/
+/*
   {
   right:70px;
 }
+*/
 
     textarea {
         width:30%;
@@ -190,13 +194,15 @@ h1{
   text-align: center;  
 font-size: 10px;
 }
+/*
   #submitCnR{
     margin-left:30px;
   }
+*/
 
     .container{
   display: flex;
-  flex-direction:column; 
+  flex-direction:row; 
   background-color:magenta;
   justify-content: space-around;
 }
@@ -219,8 +225,9 @@ body {
     
 }
      #calculator, .calculater {
-   width:80%;
+   width:70%;
     display: flex;
+         flex-direction: row;
     justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
@@ -234,24 +241,7 @@ body {
    }
  
 
-/*
-footer {
-    text-align:center;
-    font-size:18px;
-    position:bottom;
-}
-.footer_links li  {
- font-size: 18px;
-  box-sizing:content-box;
-  text-align: left;
-  flex-direction:column;
-  width: 15%;
-  height:3px;
-  margin: 0;
-  padding:2%;
-}
-     
-*/
+
     
              footer ul {
     display:flex;
@@ -295,6 +285,10 @@ footer li {
       padding: 0% 5%;
     text-align:center;
 }
+        .table{
+            display:flex;
+            flex-direction: column;
+        }
 
 
      h1 {
@@ -316,14 +310,15 @@ flex-direction:column;
     text-align:center;
     font-size:8px;
     margin-bottom:10px;
+    height:auto;
   }
      
            
   h1 a {
   background-color:limegreen;
- /* width: 300%;*/
+ 
 justify-content:center;    
-  height: 80%;
+  height: 13px;
   display: flex;
   margin-left:20px;
   
@@ -334,9 +329,9 @@ justify-content:center;
     
 
 }
-      .calculater{
+     h1 button, .calculater{
        
-        left:-20px;
+    text-align:center;
       }
   .container td{
   display: flex;
@@ -349,19 +344,7 @@ justify-content:center;
 }
 
 
-/* 
-.table{
-    display:inline-block;
-    box-sizing:border-box;
-    height: 80%;
-    width: 80%;
-    text-align:center;
-    margin:2px;
-    padding 2% 5%;
-    border: 2px solid black; 
-    font-size:8px;
-    display: list-item;
-  } */
+
         
 body {
     background-color:cornflowerblue;
