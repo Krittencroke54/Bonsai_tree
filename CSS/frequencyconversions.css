@@ -8,39 +8,25 @@
 header {
   display:inline-block;
     text-align:center;
-    background-color:purple;
+    background-color:royalblue;
     font-size: 40px;
     height:160px;
-  width:90%;
+  width:100%;
     
     margin-top:30px;
     padding-right: 126px;
     padding-top:80px;
     
 }
-/* .table label{
-  height:30%;
-  weight: 30%;
-  margin:10%;
-  border: 0 5%;
-  padding: 0% 5%
-  text-align:left;
-} */
-/* .table span{
-    height:30%;
-    width: 30%;
-  weight: 30%;
-    margin:10%;
-    border: 0 5%;
-    padding: 0% 5%
-    text-align:center; */
+
 
 h1{
-    background-color:purple;
+    background-color:rebeccapurple;
     text-align:center;
     height: 80px;
     margin-top:0;
    padding-right:170px;
+    width:100%;
 }
 
       .navi {
@@ -48,11 +34,11 @@ h1{
         width:16%;
       }  
   h1 a {
-  background-color:limegreen;
+  background-color:azure;
   width: 70%;
 /*  height: 80%;*/
   display: inline-block;
-  padding-right:10px;
+  padding-right:-15px;
   margin-left:56px;
   border: 3px solid black;
   border-radius: 8px;
@@ -84,7 +70,7 @@ h1{
 body {
     display: flex;
     flex-direction: column;
-    background-color:magenta;
+    background-color:crimson;
     font-size:45px;
    min-height: 100vh;
 }
@@ -158,19 +144,19 @@ ul.footer_links{
 @media screen and (max-width: 660px){
     header {
     text-align:center;
-    background-color:purple;
-    font-size: 16em;
-    height:100px;
-      width: 90%
+    background-color:royalblue;
+    font-size:23px;
+        height:100px;
+      width: 100%
     margin-top:0px;
-    border:10% 5%;
-    margin:0
+    border:10% 5%;                  
+    margin:0;
 padding-top:35px;
   }
     
 
 h1{
-    background-color:purple;
+    background-color:mediumpurple;
     text-align:center;
     height:30px;
     padding:1% 0%;
@@ -183,7 +169,7 @@ h1{
         width:15%;
       }  
   h1 a {
-  background-color:limegreen;
+  background-color:azure;
   width: 80%;
   height: 80%;
   display: inline-block;
@@ -203,7 +189,8 @@ font-size: 10px;
     .container{
   display: flex;
   flex-direction:row; 
-  background-color:magenta;
+  background-color:crimson;
+        
   justify-content: space-around;
 }
   /*  
@@ -243,7 +230,7 @@ body {
 
 
     
-             footer ul {
+ footer ul {
     display:flex;
     font-size:16px;
    width:100%;
@@ -267,21 +254,16 @@ footer li {
 }
        
     @media screen and (max-width: 480px){
-   header {
-    padding-left:60%;
-    text-align:center;
-    background-color:purple;
+        header{
+    text-align:center bottom;
+    background-color:royalblue;
     font-size: 16px;
-    height:120px;
+    height:180px;
     border:2% 5%;
 
     margin-top:0;
     padding-right:100%; 
 }
-        h1
-        {
-            padding-left:60%;
-        }
 .table label{
       height:30%;
 /*      weight: 30%;*/
@@ -302,7 +284,7 @@ justify-content:center;
 align-items:stretch;        
 flex-direction:column;
        /* z-margin:1;*/
-        background-color:purple;
+        background-color:mediumpurple
         
         height: 280px;
         width:100%;
@@ -320,7 +302,7 @@ flex-direction:column;
      
            
   h1 a {
-  background-color:limegreen;
+  background-color:lightskyblue;
  
 justify-content:center;    
   height: 13px;
@@ -335,14 +317,21 @@ justify-content:center;
 
 }
      h1 button, .calculater{
-       
+       align-items:flex-start;
+         
+         
     text-align:center;
       }
+    .calculater{
+        
+    
+    }
   .container td{
   display: flex;
- font-size:12px; flex-direction:row; 
-  background-color:magenta;
-  justify-content: space-around;
+ font-size:12px; 
+flex-direction:row; 
+  background-color:crimson;
+  justify-content: center;
   
       width:80vh;
 
@@ -355,11 +344,9 @@ body {
     background-color:cornflowerblue;
     font-size:8px;
   }
-      .container_functions{
-  
-      }
+    
         
-/*  #calculator, .calculater {
+  #calculator, .calculater {
    width:80%;
     display: flex;
     justify-content: space-between;
@@ -371,7 +358,7 @@ body {
    box-sizing: border-box;
    margin: 5% 2;
    
-   } */
+   } 
       .footer_links
         {     display:flex;
    flex-direction:column;
