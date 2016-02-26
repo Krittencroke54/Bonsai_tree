@@ -299,7 +299,10 @@ flex-direction:column;
     margin-bottom:10px;
     height:auto;
   }
-     
+        h1{
+            
+            height:200px;
+        }
            
   h1 a {
   background-color:lightskyblue;

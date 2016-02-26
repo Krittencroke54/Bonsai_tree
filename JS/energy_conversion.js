@@ -1,10 +1,9 @@
- var frequency = 0;
+var frequency = 0;
 var seconds;
 var speed_of_light = 299792458;
 var wavelength_ft = 1100 / frequency;
 var wavelength_m = 335 / frequency;
 var meters = 0;
-
 var bass = 0;
 var midrange = 0;
 var seconds_to_degree = 0;
