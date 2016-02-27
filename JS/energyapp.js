@@ -109,7 +109,7 @@ angular.module('energyConversionApp').directive('energyapp', function(){
         </footer>  
 </div>
       "
-    }
+    };
     
     
-})
+});
