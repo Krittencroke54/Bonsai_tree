@@ -88,6 +88,7 @@ body {
     left:18px;
     box-sizing: border-box;
     margin: 5% 2%;
+     font-size:9px;
 }
 .container td{
   font-size:16px;
@@ -136,7 +137,7 @@ ul.footer_links{
   
 }
  footer li a, footer li{
-  font-size:12px;
+  font-size:15px;
 }
  @media (max-width 1280px) {
             .foot_wrap {
@@ -256,7 +257,7 @@ footer li {
   flex-direction:row;
 }
        
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 580px){
         header{
     text-align:center bottom;
     background-color:royalblue;
