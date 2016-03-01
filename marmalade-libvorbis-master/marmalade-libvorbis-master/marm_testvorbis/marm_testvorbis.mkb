@@ -1,0 +1,36 @@
+#!/usr/bin/env mkb
+
+option module_path="../marm_ogghelper"
+option module_path="$MARMALADE_ROOT/examples/s3e/"
+
+defines
+{
+#	USE_GMEMORYMANGER
+#	HAVE_PTHREAD
+}
+
+subprojects
+{
+	libogghelper
+	ExamplesMain
+}
+
+# files specifies all files to build
+
+files
+{
+	(src)
+	[source]
+		main_2.cpp
+		
+# Add new source files here
+}
+
+
+assets
+{
+	(data)
+	test.ogg
+	ogg.raw
+
+}
