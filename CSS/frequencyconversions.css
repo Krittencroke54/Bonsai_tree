@@ -48,11 +48,12 @@ h1{
   font-size:12px;
  }
 
+
 .table {
 /*      display:inline-block; */
- box-sizing: content-box;
+    box-sizing: content-box;
     height: 80%;
-    width: 100%;
+/*    width: 100%;*/
     text-align: center;
     margin: 20px;
     padding: 120px;
@@ -66,7 +67,7 @@ h1{
   flex-direction:row; 
   background-color:azure;
   justify-content: center;
-  margin:auto;
+  margin:10px;;
 }
 
 body {
@@ -155,7 +156,7 @@ ul.footer_links{
     margin:0;
 padding-top:35px;
   }
-    
+
 
 h1{
     background-color:mediumpurple;
@@ -346,7 +347,7 @@ flex-direction:row;
 
         
 body {
-    background-color:cornflowerblue;
+    background-color:mediumpurple;
     font-size:8px;
   }
     
