@@ -1,5 +1,6 @@
 
-   angular.module("energyConversionApp",[]).controller('energyCntrl1', function($scope) {
+   angular.module("energyConversionApp",[])
+       .controller('energyCntrl1', function($scope) {
     $scope.frequency_conversion= function() {
   var frequency = document.getElementById("calculator").value;
   // note: using the same variable for input AND output is not good practice

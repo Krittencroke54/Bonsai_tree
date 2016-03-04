@@ -4,8 +4,10 @@
 	font-style: normal;
 	font-variant: normal;
 	line-height: 16px;
+
 }
 body{
+
     height:100%;
 }
 header {
@@ -53,7 +55,6 @@ h1{
 /*      display:inline-block; */
     box-sizing: content-box;
     height: 80%;
-/*    width: 100%;*/
     text-align: center;
     margin: 20px;
     padding: 120px;
@@ -67,7 +68,7 @@ h1{
   flex-direction:row; 
   background-color:azure;
   justify-content: center;
-  margin:10px;;
+  margin:10px;
 }
 
 body {
@@ -93,17 +94,6 @@ body {
 .container td{
   font-size:16px;
 }
-/*
-#submitCnR {
-  position:relative;
-  left:10px;
-}
-*/
-/*
-  {
-  right:70px;
-}
-*/
 
     textarea {
         width:30%;
@@ -112,16 +102,7 @@ body {
 
 
 
-/* .foot_wrap{
-    display: flex;
-    width:90%;
-    font-size:30px;
-    height: 45px;
-    flex-direction:column;
-  justify-content:space-between;
-  margin:auto;
 
-} */
 ul.footer_links{
   font-size:16px
 }
@@ -212,22 +193,22 @@ font-size: 10px;
 }*/
 body {
     background-color:cornflowerblue;
-    font-size:2px;
-    
+    font-size:9px;
+    width:100%;
 }
      #calculator, .calculater {
-   width:70%;
+   width:100%;
     display: flex;
          flex-direction: row;
     justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
-    float: bottom;
-    position: relative;
+         flex-grow: 1;
    left:18px;
    box-sizing: border-box;
    margin: 5% 2%;
-         font-size:12px;
+         font-size:7px;
+         padding-right: 20px;
    
    }
  
@@ -351,8 +332,8 @@ body {
     background-color:mediumpurple;
     font-size:8px;
   }
-    
-        
+      
+   
   #calculator, .calculater {
    width:80%;
     display: flex;
