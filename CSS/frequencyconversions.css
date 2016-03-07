@@ -184,25 +184,28 @@ font-size: 10px;
   justify-content: space-around;
 }
 
+
 body {
     background-color:cornflowerblue;
     font-size:9px;
     width:100%;
 }
      #calculator, .calculater {
-   width:100%;
-    display: flex;
+   width:80%;
+    display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     border: 3px solid black;
     border-radius: 8px;
    left:18px;
    box-sizing: border-box;
-   margin: 5% 2%;
+   margin:20px;
    font-size:7px;
    padding-right: 20px;
    
    }
+    
+ 
 /*footer things */
 
 
