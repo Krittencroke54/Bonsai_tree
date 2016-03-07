@@ -259,7 +259,7 @@ footer li {
         background-color:mediumpurple;
         height: 200px;
         width:50%;
-/*       padding-right: 100%;*/
+       
         
         }
   .navi {
@@ -269,6 +269,7 @@ footer li {
     font-size:8px;
     margin-bottom:10px;
     height:auto;
+    padding-left: 100%;
   }
 
            
