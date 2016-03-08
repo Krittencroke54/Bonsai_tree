@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Conversion Tables </title>
         <link rel="stylesheet" href="CSS/normalize.css">
-<!--        <link rel="stylesheet" href="CSS/energy_conversion.css">-->
         <link rel="stylesheet" href="CSS/frequencyconversions.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500' rel='stylesheet' type='text/css'>
     
@@ -15,12 +14,10 @@
     
     <body ng-app="energyConversionApp">
         <script src="JS/vendor/jquery.min.js"></script>
-<!--        <script src="JS/energy_conversion.js"></script>-->
+
         <script src="JS/angular.min.js"></script>
     <script src="controllers/angular_energy.js"></script>
-<!--    <script src="controllers/lightSpeedPal.js"></script>-->
 
-<!--        <script src="JS/energyapp.js"></script>-->
 
     
         
@@ -44,15 +41,11 @@
             Submit Freqency
         </button>
           </td>
-<!--
-        <tr> <td> <span id="range"></span> </td>
-        </tr>
--->
+
     <tr ng-controller="light_speed" class="table">
     <td for="Light distance conversion">Enter seconds light has traveled.</td>
       <td>
         <input type="text" id="seconds" class="calculater" name="Light_Distance">  </td>
-<!--    <a href=javascript:distance_light();></a>-->
         <td> <button id="calculater" class ="calculater" type="submit" ng-click="distance_lightm();">Submit number of seconds</button>
         </td>
    </tr>
