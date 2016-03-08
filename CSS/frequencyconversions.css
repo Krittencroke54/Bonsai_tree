@@ -241,8 +241,9 @@ footer li {
     text-align:center bottom;
     background-color:royalblue;
     font-size: 16px;
-    height:180px;
+    height:70px;
     border:2% 5%;
+    clear:both;
 }
 
         
@@ -251,15 +252,15 @@ footer li {
 /****************  Navigation  *******************/
 
      h1 {
-         display:flex;
+         display:block;
         justify-content:center;
-        align-items:center;        
+        align-content: space-between;        
         flex-direction:column;
        /* z-margin:1;*/
         background-color:mediumpurple;
-        height: 200px;
-        width:50%;
-       
+        height:180px;
+        width:100%;
+       clear:both;
         
         }
   .navi {
@@ -268,8 +269,8 @@ footer li {
     text-align:center;
     font-size:8px;
     margin-bottom:10px;
-    height:auto;
-    padding-left: 100%;
+    height:15px;
+    padding-left: 0%;
   }
 
            
@@ -293,35 +294,34 @@ justify-content:center;
 /*****************        body content    **************/
         
 body {
-    background-color:mediumpurple;
-    font-size:8px;
+    
+    font-size:12px;
+    height:100%;
   }
         
  .container td  {
   display: flex;
- font-size:12px; 
+ font-size:19px; 
 flex-direction:row; 
   background-color:crimson;
   justify-content: center;
-     height:30px;
-  
+     height:30%;
+  text-align: center;
       width:80vh;
 
 }
+        
+        
 
         
 .table label{
       height:50%;
-
-      margin:10%;
-      border: 0 5%;
-      padding: 0% 5%;
-    text-align:center;
+    text-align: left;
 }
         .table{
             display:flex;
             flex-direction: column;
-            height:30%;
+        height:70%;
         }
         
         
@@ -329,44 +329,51 @@ flex-direction:row;
         
       
    
- #calculator,.calculater {
-   width:50%;
+ #calculator, .calculater {
+     text-align: center;
+   width:40%;
     display: flex;
     justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
    box-sizing: border-box;
    margin: 5% 5%;
-   left:-20px;   } 
-        
+   height:90%;    
+    font-size:10px;
+        }
 /*******     Footer  ******/
         
         
-      .footer_links  {  
-           display:flex;
-           flex-direction:column;
-           height: 180px;     
-           text-align:center;
-      }
-  
+   
   
       
         
+
  footer {
-    display:inline;
+    display:flex;
+     flex-direction: column;
     text-align:center;
     font-size:16px;
+     height:230px;
     
 }
-.footer_links li {
+
+.footer_links  {
   
   box-sizing:content-box;
   text-align: center;
   display: flex;
+flex-direction:column;
   width: 8%;
-  height:3px;
+  height:100%;
   margin: auto;
   padding:5%;
   justify-content: space-around;
+     
+    flex-direction:column;
+    height: 180px;     
+    text-align:center;
 }
+
+
        
