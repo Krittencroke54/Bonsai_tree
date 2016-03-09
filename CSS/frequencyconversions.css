@@ -200,7 +200,7 @@ body {
    left:18px;
    box-sizing: border-box;
    margin:20px;
-   font-size:7px;
+   font-size:9px;
    padding-right: 20px;
    
    }
@@ -295,7 +295,7 @@ justify-content:center;
         
 body {
     
-    font-size:15px;
+    font-size:10px;
     height:100%;
   }
         
@@ -305,7 +305,7 @@ body {
 flex-direction:row; 
   background-color:crimson;
   justify-content: center;
-     height:25%;
+     height:35%;
   text-align: center;
       width:80vh;
 
@@ -329,17 +329,18 @@ flex-direction:row;
         
       
    
- #calculator,.calculater {
+ #calculator, .calculater {
      text-align: center;
-   width:50%;
+   width:50% ;
     display: flex;
     justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
    box-sizing: border-box;
    margin: 5% 5%;
-   height:25px;   } 
-    font-size:16px;    
+   height:25px;    
+    font-size:10px;  
+        }
 /*******     Footer  ******/
         
         
