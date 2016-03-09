@@ -242,8 +242,8 @@ footer li {
     background-color:royalblue;
     font-size: 16px;
     height:70px;
-    border:2% 5%;
-    clear:both;
+    width:100%;
+    padding-left:50%;
 }
 
         
@@ -252,25 +252,26 @@ footer li {
 /****************  Navigation  *******************/
 
      h1 {
-         display:block;
+         display:inline-block;
         justify-content:center;
-        align-content: space-between;        
+        align-content: center;        
         flex-direction:column;
        /* z-margin:1;*/
         background-color:mediumpurple;
         height:180px;
-        width:100%;
-       clear:both;
+        width:200%;
+       
         
         }
   .navi {
-    display:inline-block;
+    display:flex;
     width:50%;
     text-align:center;
     font-size:8px;
     margin-bottom:10px;
     height:15px;
-    padding-left: 0%;
+    padding-left: 35%;
+      align-content: center;
   }
 
            
@@ -281,10 +282,12 @@ justify-content:center;
   height: 13px;
   display: flex;
   margin-left:20px;
-  
+  width:50%;
   border: 3px solid black;
   border-radius: 8px;
  font-size:9px;
+
+
   }
   
     
@@ -295,19 +298,27 @@ justify-content:center;
         
 body {
     
+<<<<<<< HEAD
     font-size:10px;
+=======
+    font-size:12px;
+>>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
     height:100%;
   }
         
  .container td  {
   display: flex;
- font-size:19px; 
-flex-direction:row; 
+  font-size:19px; 
+  flex-direction:row; 
   background-color:crimson;
   justify-content: center;
+<<<<<<< HEAD
      height:35%;
+=======
+  height:20%;
+>>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
   text-align: center;
-      width:80vh;
+  width:80vh;
 
 }
         
@@ -316,14 +327,15 @@ flex-direction:row;
         
 .table label{
       height:50%;
-    text-align: right;
+    text-align: left;
 }
-        .table{
-            display:flex;
-            flex-direction: column;
-        
-        }
-        
+
+.table{
+    display:flex;
+    flex-direction: column;
+     height:70%;
+}
+
         
         
         
@@ -331,26 +343,29 @@ flex-direction:row;
    
  #calculator, .calculater {
      text-align: center;
+<<<<<<< HEAD
    width:50% ;
+=======
+   width:40%;
+>>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
     display: flex;
     justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
    box-sizing: border-box;
    margin: 5% 5%;
+<<<<<<< HEAD
    height:25px;    
     font-size:10px;  
+=======
+   height:90%;    
+    font-size:10px;
+>>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
         }
 /*******     Footer  ******/
         
         
-      .footer_links  {  
-           display:flex;
-           flex-direction:column;
-           height: 180px;     
-           text-align:center;
-      }
-  
+   
   
       
         
@@ -361,6 +376,7 @@ flex-direction:row;
     text-align:center;
     font-size:16px;
      height:230px;
+     padding-left: 100%;
     
 }
 
@@ -375,6 +391,10 @@ flex-direction:column;
   margin: auto;
   padding:5%;
   justify-content: space-around;
+     
+    flex-direction:column;
+    height: 180px;     
+    text-align:center;
 }
 
 
