@@ -242,8 +242,8 @@ footer li {
     background-color:royalblue;
     font-size: 16px;
     height:70px;
-    border:2% 5%;
-    clear:both;
+    width:100%;
+    padding-left:50%;
 }
 
         
@@ -252,25 +252,26 @@ footer li {
 /****************  Navigation  *******************/
 
      h1 {
-         display:block;
+         display:inline-block;
         justify-content:center;
-        align-content: space-between;        
+        align-content: center;        
         flex-direction:column;
        /* z-margin:1;*/
         background-color:mediumpurple;
         height:180px;
-        width:100%;
-       clear:both;
+        width:200%;
+       
         
         }
   .navi {
-    display:inline-block;
+    display:flex;
     width:50%;
     text-align:center;
     font-size:8px;
     margin-bottom:10px;
     height:15px;
-    padding-left: 0%;
+    padding-left: 35%;
+      align-content: center;
   }
 
            
@@ -281,10 +282,12 @@ justify-content:center;
   height: 13px;
   display: flex;
   margin-left:20px;
-  
+  width:50%;
   border: 3px solid black;
   border-radius: 8px;
  font-size:9px;
+
+
   }
   
     
@@ -301,13 +304,13 @@ body {
         
  .container td  {
   display: flex;
- font-size:19px; 
-flex-direction:row; 
+  font-size:19px; 
+  flex-direction:row; 
   background-color:crimson;
   justify-content: center;
-     height:30%;
+  height:20%;
   text-align: center;
-      width:80vh;
+  width:80vh;
 
 }
         
@@ -318,12 +321,13 @@ flex-direction:row;
       height:50%;
     text-align: left;
 }
-        .table{
-            display:flex;
-            flex-direction: column;
-        height:70%;
-        }
-        
+
+.table{
+    display:flex;
+    flex-direction: column;
+     height:70%;
+}
+
         
         
         
@@ -355,6 +359,7 @@ flex-direction:row;
     text-align:center;
     font-size:16px;
      height:230px;
+     padding-left: 100%;
     
 }
 
