@@ -298,11 +298,8 @@ justify-content:center;
         
 body {
     
-<<<<<<< HEAD
-    font-size:10px;
-=======
     font-size:12px;
->>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
+
     height:100%;
   }
         
@@ -312,11 +309,8 @@ body {
   flex-direction:row; 
   background-color:crimson;
   justify-content: center;
-<<<<<<< HEAD
-     height:35%;
-=======
+  height:35%;
   height:20%;
->>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
   text-align: center;
   width:80vh;
 
@@ -343,24 +337,16 @@ body {
    
  #calculator, .calculater {
      text-align: center;
-<<<<<<< HEAD
-   width:50% ;
-=======
-   width:40%;
->>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
+    width:40%;
     display: flex;
     justify-content: space-between;
     border: 3px solid black;
     border-radius: 8px;
    box-sizing: border-box;
    margin: 5% 5%;
-<<<<<<< HEAD
-   height:25px;    
-    font-size:10px;  
-=======
    height:90%;    
     font-size:10px;
->>>>>>> 00fecdcea9ca22395a5053c01d009e4dfe986135
+
         }
 /*******     Footer  ******/
         
